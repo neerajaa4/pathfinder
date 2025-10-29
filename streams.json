@@ -1,0 +1,564 @@
+{
+  "streams": {
+    "science": {
+      "id": "science",
+      "name": "Science Stream",
+      "description": "For students interested in Technology, Medicine, Research and Innovation",
+      "icon": "fas fa-atom",
+      "color": "#667eea",
+      "subjects": [
+        {
+          "name": "Physics",
+          "description": "Study of matter, energy, and their interactions"
+        },
+        {
+          "name": "Chemistry", 
+          "description": "Study of substances and their transformations"
+        },
+        {
+          "name": "Mathematics",
+          "description": "Advanced mathematical concepts and applications"
+        },
+        {
+          "name": "Biology",
+          "description": "Study of living organisms and life processes"
+        }
+      ],
+      "combinations": [
+        {
+          "name": "PCM",
+          "fullForm": "Physics, Chemistry, Mathematics",
+          "description": "Engineering and Technology focused combination",
+          "careers": ["Engineering", "Architecture", "Computer Science", "Defense Services", "Research"],
+          "popularExams": ["JEE Main", "JEE Advanced", "BITSAT", "VITEEE", "COMEDK"],
+          "degreeOptions": ["BTech/BE", "BArch", "BSc", "BCA"]
+        },
+        {
+          "name": "PCB",
+          "fullForm": "Physics, Chemistry, Biology", 
+          "description": "Medical and Life Sciences focused combination",
+          "careers": ["MBBS Doctor", "BDS Dentist", "Pharmacy", "Biotechnology", "Nursing"],
+          "popularExams": ["NEET UG", "AIIMS", "JIPMER", "State Medical Exams"],
+          "degreeOptions": ["MBBS", "BDS", "BPharm", "BSc Nursing", "BAMS"]
+        },
+        {
+          "name": "PCMB",
+          "fullForm": "Physics, Chemistry, Mathematics, Biology",
+          "description": "Complete science combination with all options open",
+          "careers": ["All Engineering Fields", "All Medical Fields", "Research", "Teaching"],
+          "popularExams": ["JEE Main", "NEET UG", "All Science Entrance Exams"],
+          "degreeOptions": ["All Science and Professional Degrees"]
+        }
+      ],
+      "careerPath": {
+        "after10th": "Intermediate (10+2) with Science Stream",
+        "after12th": {
+          "engineering": {
+            "path": "BTech/BE (4 years) → MTech/MS (2 years) → PhD (3-5 years)",
+            "entranceExams": ["JEE Main", "JEE Advanced", "State CETs", "BITSAT"],
+            "specializations": ["Computer Science", "Mechanical", "Civil", "Electrical", "Electronics", "Chemical"]
+          },
+          "medical": {
+            "path": "MBBS (5.5 years) → MD/MS (3 years) → DM/MCh (3 years)",
+            "entranceExams": ["NEET UG", "AIIMS", "JIPMER"],
+            "specializations": ["General Medicine", "Surgery", "Pediatrics", "Gynecology", "Orthopedics"]
+          },
+          "otherScience": {
+            "path": "BSc (3 years) → MSc (2 years) → PhD (3-5 years)",
+            "entranceExams": ["University Entrance Tests", "IIT JAM", "NEST"],
+            "specializations": ["Physics", "Chemistry", "Mathematics", "Biology", "Biotechnology"]
+          }
+        }
+      },
+      "governmentExams": {
+        "after12th": [
+          {
+            "name": "JEE Main",
+            "purpose": "Engineering admissions in NITs, IIITs, GFTIs",
+            "officialWebsite": "https://jeemain.nta.nic.in",
+            "eligibility": "12th with PCM, minimum 75% marks",
+            "attempts": "3 consecutive years"
+          },
+          {
+            "name": "NEET UG",
+            "purpose": "Medical admissions in MBBS, BDS, AYUSH courses",
+            "officialWebsite": "https://neet.nta.nic.in", 
+            "eligibility": "12th with PCB, minimum 50% marks",
+            "attempts": "No limit"
+          },
+          {
+            "name": "NDA",
+            "purpose": "National Defence Academy for Army, Navy, Air Force",
+            "officialWebsite": "https://upsc.gov.in",
+            "eligibility": "12th Pass, Age 16.5-19.5 years",
+            "attempts": "6 attempts"
+          }
+        ],
+        "afterDegree": [
+          {
+            "name": "GATE",
+            "purpose": "Post Graduation in Engineering and PSU jobs",
+            "officialWebsite": "https://gate.iitkgp.ac.in",
+            "eligibility": "BTech/BE or equivalent",
+            "ageLimit": "No age limit"
+          },
+          {
+            "name": "UPSC ESE",
+            "purpose": "Engineering Services Examination",
+            "officialWebsite": "https://upsc.gov.in",
+            "eligibility": "Engineering Degree",
+            "ageLimit": "21-30 years"
+          },
+          {
+            "name": "ISRO Scientist",
+            "purpose": "Scientist positions in Space Research Organization",
+            "officialWebsite": "https://isro.gov.in",
+            "eligibility": "Engineering Degree with 65% marks",
+            "ageLimit": "35 years"
+          }
+        ]
+      },
+      "jobOpportunities": [
+        {
+          "sector": "Engineering & Technology",
+          "jobs": [
+            {"position": "Software Engineer", "avgSalary": "₹6-20 LPA", "companies": ["Google", "Microsoft", "TCS", "Infosys"]},
+            {"position": "Mechanical Engineer", "avgSalary": "₹4-12 LPA", "companies": ["L&T", "TATA", "Mahindra", "Maruti"]},
+            {"position": "Civil Engineer", "avgSalary": "₹4-10 LPA", "companies": ["L&T", "Shapoorji", "GMR", "Government PWD"]},
+            {"position": "Data Scientist", "avgSalary": "₹8-25 LPA", "companies": ["Amazon", "Flipkart", "Analytics Firms"]}
+          ]
+        },
+        {
+          "sector": "Medical & Healthcare", 
+          "jobs": [
+            {"position": "Medical Doctor", "avgSalary": "₹8-30 LPA", "hospitals": ["AIIMS", "Apollo", "Fortis", "Government Hospitals"]},
+            {"position": "Dentist", "avgSalary": "₹6-20 LPA", "hospitals": ["Private Clinics", "Dental Chains", "Hospitals"]},
+            {"position": "Pharmacist", "avgSalary": "₹3-8 LPA", "companies": ["Pharma Companies", "Hospitals", "Retail Pharmacy"]},
+            {"position": "Medical Researcher", "avgSalary": "₹5-15 LPA", "institutes": ["Research Labs", "Pharma R&D", "Universities"]}
+          ]
+        },
+        {
+          "sector": "Research & Development",
+          "jobs": [
+            {"position": "Scientist", "avgSalary": "₹6-18 LPA", "organizations": ["ISRO", "DRDO", "CSIR", "BARC"]},
+            {"position": "Research Analyst", "avgSalary": "₹4-12 LPA", "companies": ["Research Firms", "Consultancies", "Universities"]},
+            {"position": "Lab Technician", "avgSalary": "₹3-7 LPA", "places": ["Hospitals", "Research Labs", "Educational Institutes"]},
+            {"position": "Professor", "avgSalary": "₹8-20 LPA", "institutes": ["IITs", "NITs", "Universities", "Colleges"]}
+          ]
+        }
+      ]
+    },
+
+    "commerce": {
+      "id": "commerce", 
+      "name": "Commerce Stream",
+      "description": "For students interested in Business, Finance, Accounting and Entrepreneurship",
+      "icon": "fas fa-chart-line",
+      "color": "#4cd964",
+      "subjects": [
+        {
+          "name": "Accountancy",
+          "description": "Principles of accounting and financial management"
+        },
+        {
+          "name": "Business Studies",
+          "description": "Study of business operations and management"
+        },
+        {
+          "name": "Economics",
+          "description": "Micro and macro economic principles"
+        },
+        {
+          "name": "Mathematics/Statistics",
+          "description": "Optional based on course selection"
+        }
+      ],
+      "professionalCourses": [
+        {
+          "name": "CA",
+          "fullForm": "Chartered Accountancy",
+          "duration": "4.5-5 years",
+          "levels": ["CA Foundation", "CA Intermediate", "CA Final"],
+          "scope": "Auditing, Taxation, Financial Consulting, Corporate Finance",
+          "officialWebsite": "https://www.icai.org",
+          "avgSalary": "₹6-20 LPA"
+        },
+        {
+          "name": "CS",
+          "fullForm": "Company Secretary", 
+          "duration": "3-4 years",
+          "levels": ["CS Foundation", "CS Executive", "CS Professional"],
+          "scope": "Corporate Legal Compliance, Company Law, Secretarial Practice",
+          "officialWebsite": "https://www.icsi.edu",
+          "avgSalary": "₹5-15 LPA"
+        },
+        {
+          "name": "CMA",
+          "fullForm": "Cost Management Accountant",
+          "duration": "3-4 years", 
+          "levels": ["CMA Foundation", "CMA Intermediate", "CMA Final"],
+          "scope": "Cost Accounting, Management Accounting, Financial Analysis",
+          "officialWebsite": "https://icmai.in",
+          "avgSalary": "₹5-18 LPA"
+        }
+      ],
+      "degreeCourses": [
+        {
+          "name": "BCom",
+          "fullForm": "Bachelor of Commerce",
+          "duration": "3 years",
+          "specializations": ["Accounting", "Finance", "Taxation", "Banking", "Computer Applications"],
+          "furtherStudies": ["MBA", "MCom", "Professional Courses", "CA"],
+          "avgSalary": "₹3-8 LPA"
+        },
+        {
+          "name": "BBA", 
+          "fullForm": "Bachelor of Business Administration",
+          "duration": "3 years",
+          "specializations": ["Marketing", "Finance", "HR", "Operations", "International Business"],
+          "furtherStudies": ["MBA", "PGDM", "Specialized Masters"],
+          "avgSalary": "₹4-10 LPA"
+        },
+        {
+          "name": "Economics Honours",
+          "fullForm": "Bachelor of Arts in Economics",
+          "duration": "3 years", 
+          "specializations": ["Microeconomics", "Macroeconomics", "Econometrics", "Development Economics"],
+          "furtherStudies": ["MA Economics", "MBA", "Civil Services", "Banking Exams"],
+          "avgSalary": "₹4-12 LPA"
+        }
+      ],
+      "governmentExams": {
+        "after12th": [
+          {
+            "name": "CA Foundation",
+            "purpose": "Entry to Chartered Accountancy course",
+            "officialWebsite": "https://www.icai.org",
+            "eligibility": "12th Pass from any stream",
+            "frequency": "Twice a year"
+          }
+        ],
+        "afterDegree": [
+          {
+            "name": "SSC CGL",
+            "purpose": "Staff Selection Commission Combined Graduate Level",
+            "officialWebsite": "https://ssc.nic.in",
+            "eligibility": "Graduation in any stream",
+            "posts": ["Auditor", "Accountant", "Tax Assistant", "Statistical Investigator"]
+          },
+          {
+            "name": "Bank PO Exams",
+            "purpose": "Probationary Officer in Public Sector Banks",
+            "officialWebsite": "https://ibps.in",
+            "eligibility": "Graduation with 60% marks",
+            "banks": ["SBI", "IBPS", "RBI", "NABARD"]
+          },
+          {
+            "name": "UPSC Civil Services",
+            "purpose": "Administrative Services (IAS, IPS, IFS, etc.)",
+            "officialWebsite": "https://upsc.gov.in", 
+            "eligibility": "Graduation in any stream",
+            "ageLimit": "21-32 years"
+          }
+        ]
+      },
+      "jobOpportunities": [
+        {
+          "sector": "Accounting & Finance",
+          "jobs": [
+            {"position": "Chartered Accountant", "avgSalary": "₹6-25 LPA", "firms": ["Big 4", "CA Firms", "Corporates"]},
+            {"position": "Financial Analyst", "avgSalary": "₹5-15 LPA", "companies": ["Banks", "Investment Firms", "Corporates"]},
+            {"position": "Auditor", "avgSalary": "₹4-12 LPA", "organizations": ["CA Firms", "Corporate Internal Audit"]},
+            {"position": "Tax Consultant", "avgSalary": "₹4-10 LPA", "practice": ["Independent", "CA Firms", "Legal Firms"]}
+          ]
+        },
+        {
+          "sector": "Banking & Insurance",
+          "jobs": [
+            {"position": "Bank PO", "avgSalary": "₹8-16 LPA", "banks": ["SBI", "PNB", "Bank of Baroda"]},
+            {"position": "Relationship Manager", "avgSalary": "₹5-12 LPA", "sector": ["Private Banks", "NBFCs", "Wealth Management"]},
+            {"position": "Insurance Advisor", "avgSalary": "₹4-10 LPA", "companies": ["LIC", "Private Insurers"]},
+            {"position": "Investment Banker", "avgSalary": "₹10-30 LPA", "firms": ["Investment Banks", "Brokerage Houses"]}
+          ]
+        },
+        {
+          "sector": "Corporate Sector",
+          "jobs": [
+            {"position": "HR Manager", "avgSalary": "₹6-18 LPA", "companies": ["All Industries", "Consulting Firms"]},
+            {"position": "Marketing Executive", "avgSalary": "₹4-12 LPA", "sectors": ["FMCG", "Retail", "Digital Marketing"]},
+            {"position": "Business Analyst", "avgSalary": "₹5-15 LPA", "companies": ["IT", "Consulting", "E-commerce"]},
+            {"position": "Entrepreneur", "avgSalary": "Varies", "opportunities": ["Startups", "Small Business", "Franchise"]}
+          ]
+        }
+      ]
+    },
+
+    "arts": {
+      "id": "arts",
+      "name": "Arts/Humanities Stream", 
+      "description": "For students interested in Social Sciences, Languages, Creative Arts and Civil Services",
+      "icon": "fas fa-palette",
+      "color": "#f093fb",
+      "subjectCategories": [
+        {
+          "category": "Social Sciences",
+          "subjects": ["History", "Political Science", "Sociology", "Psychology", "Geography", "Public Administration"]
+        },
+        {
+          "category": "Languages & Literature", 
+          "subjects": ["English", "Hindi", "Regional Languages", "Sanskrit", "Journalism", "Mass Communication"]
+        },
+        {
+          "category": "Creative Arts",
+          "subjects": ["Fine Arts", "Music", "Dance", "Theatre", "Photography", "Fashion Studies"]
+        }
+      ],
+      "careerPaths": [
+        {
+          "category": "Civil Services & Government Jobs",
+          "options": [
+            {
+              "name": "UPSC Civil Services",
+              "posts": ["IAS", "IPS", "IFS", "IRS", "IPS"],
+              "officialWebsite": "https://upsc.gov.in",
+              "preparationTime": "1-2 years",
+              "selectionRate": "0.1-0.2%"
+            },
+            {
+              "name": "SSC CGL",
+              "posts": ["Group A & B officers", "Auditor", "Accountant", "Statistical Investigator"],
+              "officialWebsite": "https://ssc.nic.in", 
+              "preparationTime": "6-12 months",
+              "selectionRate": "1-2%"
+            },
+            {
+              "name": "State PSCs",
+              "posts": ["State Administration", "Police Services", "Revenue Services", "Education Services"],
+              "preparationTime": "1 year",
+              "selectionRate": "2-5%"
+            }
+          ]
+        },
+        {
+          "category": "Professional Courses",
+          "options": [
+            {
+              "name": "BA LLB",
+              "duration": "5 years integrated",
+              "entranceExams": ["CLAT", "AILET", "LSAT", "University Entrances"],
+              "careers": ["Lawyer", "Legal Advisor", "Corporate Counsel", "Judge"],
+              "avgSalary": "₹5-20 LPA"
+            },
+            {
+              "name": "BFA",
+              "duration": "4 years",
+              "specializations": ["Painting", "Sculpture", "Applied Arts", "Art History"],
+              "careers": ["Artist", "Designer", "Art Teacher", "Curator"],
+              "avgSalary": "₹3-10 LPA"
+            },
+            {
+              "name": "BJMC",
+              "duration": "3 years", 
+              "specializations": ["Journalism", "Advertising", "Public Relations", "Digital Media"],
+              "careers": ["Journalist", "Content Writer", "Media Professional", "PR Executive"],
+              "avgSalary": "₹3-12 LPA"
+            }
+          ]
+        },
+        {
+          "category": "Teaching & Education",
+          "options": [
+            {
+              "name": "BEd",
+              "duration": "2 years",
+              "eligibility": "Graduation in any stream with 50% marks",
+              "careers": ["School Teacher", "Education Consultant", "Content Developer"],
+              "avgSalary": "₹3-8 LPA"
+            },
+            {
+              "name": "MA + BEd Integrated",
+              "duration": "3 years",
+              "eligibility": "Graduation in relevant subject",
+              "careers": ["Post Graduate Teacher", "College Professor", "Education Officer"],
+              "avgSalary": "₹5-12 LPA"
+            }
+          ]
+        }
+      ],
+      "governmentExams": {
+        "after12th": [
+          {
+            "name": "CLAT",
+            "purpose": "Common Law Admission Test for Law Colleges",
+            "officialWebsite": "https://consortiumofnlus.ac.in",
+            "eligibility": "12th Pass with 45% marks",
+            "ageLimit": "20 years (for UG)"
+          }
+        ],
+        "afterDegree": [
+          {
+            "name": "UPSC Civil Services",
+            "purpose": "Administrative Services Examination",
+            "officialWebsite": "https://upsc.gov.in",
+            "eligibility": "Graduation in any stream",
+            "ageLimit": "21-32 years"
+          },
+          {
+            "name": "SSC CGL", 
+            "purpose": "Combined Graduate Level Examination",
+            "officialWebsite": "https://ssc.nic.in",
+            "eligibility": "Graduation in any stream",
+            "ageLimit": "18-32 years"
+          },
+          {
+            "name": "CTET",
+            "purpose": "Central Teacher Eligibility Test",
+            "officialWebsite": "https://ctet.nic.in",
+            "eligibility": "Graduation + BEd or in final year",
+            "validity": "Lifetime"
+          }
+        ]
+      },
+      "jobOpportunities": [
+        {
+          "sector": "Government Services",
+          "jobs": [
+            {"position": "IAS Officer", "avgSalary": "₹12-25 LPA", "perks": ["Government Accommodation", "Vehicle", "Security"]},
+            {"position": "IPS Officer", "avgSalary": "₹12-25 LPA", "perks": ["Police Housing", "Vehicle", "Security"]},
+            {"position": "State Services", "avgSalary": "₹8-18 LPA", "posts": ["SDM", "DSP", "BDO", "Tehsildar"]},
+            {"position": "Bank PO", "avgSalary": "₹8-16 LPA", "banks": ["Public Sector Banks", "RBI", "NABARD"]}
+          ]
+        },
+        {
+          "sector": "Education & Research", 
+          "jobs": [
+            {"position": "University Professor", "avgSalary": "₹8-20 LPA", "institutes": ["Universities", "Colleges", "Research Centers"]},
+            {"position": "School Teacher", "avgSalary": "₹3-8 LPA", "schools": ["CBSE", "ICSE", "State Boards", "International Schools"]},
+            {"position": "Researcher", "avgSalary": "₹5-15 LPA", "organizations": ["Think Tanks", "Research Institutes", "Universities"]},
+            {"position": "Education Consultant", "avgSalary": "₹4-12 LPA", "clients": ["Students", "Schools", "Educational Institutes"]}
+          ]
+        },
+        {
+          "sector": "Media & Creative Arts",
+          "jobs": [
+            {"position": "Journalist", "avgSalary": "₹3-12 LPA", "media": ["Newspapers", "TV Channels", "Digital Media"]},
+            {"position": "Content Writer", "avgSalary": "₹3-8 LPA", "sectors": ["Digital Marketing", "Publishing", "Corporate"]},
+            {"position": "Graphic Designer", "avgSalary": "₹3-10 LPA", "fields": ["Advertising", "Web Design", "Publication"]},
+            {"position": "Social Media Manager", "avgSalary": "₹4-12 LPA", "companies": ["All Industries", "Agencies", "Freelance"]}
+          ]
+        }
+      ]
+    },
+
+    "vocational": {
+      "id": "vocational",
+      "name": "Vocational Courses",
+      "description": "Skill-based education for immediate employment and entrepreneurship",
+      "icon": "fas fa-tools", 
+      "color": "#ff9500",
+      "courses": [
+        {
+          "type": "ITI Courses",
+          "duration": "1-2 years",
+          "fields": [
+            {
+              "name": "Engineering Trades",
+              "courses": [
+                {"name": "Electrician", "duration": "2 years", "jobRoles": ["Electrician", "Wireman", "Maintenance Technician"]},
+                {"name": "Fitter", "duration": "2 years", "jobRoles": ["Fitter", "Assembly Technician", "Maintenance Fitter"]},
+                {"name": "Welder", "duration": "1 year", "jobRoles": ["Welder", "Fabricator", "Sheet Metal Worker"]},
+                {"name": "Mechanic", "duration": "2 years", "jobRoles": ["Automobile Mechanic", "Diesel Mechanic", "Maintenance Mechanic"]}
+              ]
+            },
+            {
+              "name": "Non-Engineering Trades", 
+              "courses": [
+                {"name": "Computer Operator", "duration": "1 year", "jobRoles": ["Data Entry Operator", "Computer Operator", "Office Assistant"]},
+                {"name": "Secretarial Practice", "duration": "1 year", "jobRoles": ["Office Secretary", "Administrative Assistant", "Receptionist"]},
+                {"name": "Hair & Skin Care", "duration": "1 year", "jobRoles": ["Beautician", "Hair Stylist", "Skin Care Specialist"]},
+                {"name": "Photography", "duration": "1 year", "jobRoles": ["Photographer", "Photo Editor", "Studio Assistant"]}
+              ]
+            }
+          ],
+          "avgSalary": "₹2-6 LPA"
+        },
+        {
+          "type": "Polytechnic Diploma",
+          "duration": "3 years", 
+          "fields": [
+            {
+              "name": "Engineering Diploma",
+              "courses": [
+                {"name": "Civil Engineering", "duration": "3 years", "jobRoles": ["Junior Engineer", "Site Supervisor", "Draughtsman"]},
+                {"name": "Mechanical Engineering", "duration": "3 years", "jobRoles": ["Junior Engineer", "Maintenance Supervisor", "Quality Inspector"]},
+                {"name": "Electrical Engineering", "duration": "3 years", "jobRoles": ["Junior Engineer", "Electrical Supervisor", "Maintenance Engineer"]},
+                {"name": "Computer Science", "duration": "3 years", "jobRoles": ["Programmer", "IT Support", "Network Technician"]}
+              ]
+            },
+            {
+              "name": "Other Diplomas",
+              "courses": [
+                {"name": "Fashion Technology", "duration": "2 years", "jobRoles": ["Fashion Designer", "Textile Designer", "Merchandiser"]},
+                {"name": "Interior Design", "duration": "2 years", "jobRoles": ["Interior Designer", "Space Planner", "Design Consultant"]},
+                {"name": "Hotel Management", "duration": "2 years", "jobRoles": ["Hotel Staff", "Front Office", "Food Service"]},
+                {"name": "Animation", "duration": "2 years", "jobRoles": ["Animator", "Graphic Designer", "Video Editor"]}
+              ]
+            }
+          ],
+          "avgSalary": "₹3-8 LPA"
+        }
+      ],
+      "governmentSchemes": [
+        {
+          "name": "PMKVY",
+          "fullForm": "Pradhan Mantri Kaushal Vikas Yojana",
+          "purpose": "Skill Development Training for Youth",
+          "officialWebsite": "https://www.pmkvyofficial.org",
+          "benefits": ["Free Training", "Certification", "Placement Assistance", "Stipend during training"]
+        },
+        {
+          "name": "DDU-GKY",
+          "fullForm": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana",
+          "purpose": "Rural Youth Skill Training and Placement",
+          "officialWebsite": "https://ddugky.gov.in", 
+          "benefits": ["Free Residential Training", "Placement Guarantee", "Travel Allowance", "Post-placement support"]
+        },
+        {
+          "name": "Apprenticeship Training",
+          "purpose": "On-the-job training with stipend",
+          "officialWebsite": "https://apprenticeshipindia.gov.in",
+          "benefits": ["Stipend during training", "Practical experience", "Certificate", "Job opportunity"]
+        }
+      ],
+      "jobOpportunities": [
+        {
+          "sector": "Technical Jobs",
+          "jobs": [
+            {"position": "Electrician", "avgSalary": "₹2-5 LPA", "industries": ["Construction", "Manufacturing", "Maintenance"]},
+            {"position": "Mechanic", "avgSalary": "₹2-6 LPA", "sectors": ["Automobile", "Industrial", "Agricultural"]},
+            {"position": "Welder", "avgSalary": "₹2-5 LPA", "fields": ["Fabrication", "Construction", "Shipbuilding"]},
+            {"position": "Fitter", "avgSalary": "₹2-6 LPA", "industries": ["Manufacturing", "Assembly", "Maintenance"]}
+          ]
+        },
+        {
+          "sector": "Service Sector",
+          "jobs": [
+            {"position": "Hotel Staff", "avgSalary": "₹2-4 LPA", "establishments": ["Hotels", "Restaurants", "Resorts"]},
+            {"position": "Beautician", "avgSalary": "₹2-5 LPA", "places": ["Salons", "Spas", "Beauty Clinics"]},
+            {"position": "Computer Operator", "avgSalary": "₹2-4 LPA", "organizations": ["Offices", "Banks", "Educational Institutes"]},
+            {"position": "Receptionist", "avgSalary": "₹2-4 LPA", "sectors": ["Corporate", "Hospitality", "Healthcare"]}
+          ]
+        },
+        {
+          "sector": "Entrepreneurship", 
+          "opportunities": [
+            {"business": "Workshop Owner", "investment": "₹1-5 Lakhs", "potential": ["Auto Repair", "Electrical Services", "Fabrication"]},
+            {"business": "Service Center", "investment": "₹2-8 Lakhs", "potential": ["Mobile Repair", "Computer Services", "Home Appliances"]},
+            {"business": "Small Manufacturing", "investment": "₹5-20 Lakhs", "potential": ["Furniture", "Packaging", "Components"]},
+            {"business": "Skill Training Center", "investment": "₹3-10 Lakhs", "potential": ["Vocational Training", "Skill Development"]}
+          ]
+        }
+      ]
+    }
+  }
+}

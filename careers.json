@@ -1,0 +1,533 @@
+{
+  "streams": [
+    {
+      "id": "science",
+      "name": "Science Stream",
+      "description": "For students interested in Technology, Medicine, Research and Innovation",
+      "icon": "fas fa-atom",
+      "subjects": ["Physics", "Chemistry", "Mathematics", "Biology"],
+      "combinations": [
+        {
+          "name": "PCM (Physics, Chemistry, Mathematics)",
+          "careers": ["Engineering", "Architecture", "Computer Science", "Defense Services"],
+          "exams": ["JEE Main", "JEE Advanced", "BITSAT", "VITEEE"]
+        },
+        {
+          "name": "PCB (Physics, Chemistry, Biology)",
+          "careers": ["MBBS - Medicine", "BDS - Dentistry", "Pharmacy", "Biotechnology"],
+          "exams": ["NEET UG", "AIIMS", "JIPMER"]
+        },
+        {
+          "name": "PCMB (All Four Subjects)",
+          "careers": ["Widest career options", "Both Engineering & Medical", "Research Fields"],
+          "exams": ["JEE Main", "NEET UG", "Other Science Exams"]
+        }
+      ],
+      "careerPaths": [
+        {
+          "stage": "After 12th",
+          "options": [
+            {
+              "name": "Engineering",
+              "degrees": ["BTech/BE (4 years)", "BArch (5 years)"],
+              "exams": ["JEE Main", "JEE Advanced", "State CETs"],
+              "specializations": ["Computer Science", "Mechanical", "Civil", "Electrical", "Electronics"]
+            },
+            {
+              "name": "Medical",
+              "degrees": ["MBBS (5.5 years)", "BDS (5 years)", "BAMS", "BHMS"],
+              "exams": ["NEET UG"],
+              "specializations": ["General Medicine", "Surgery", "Dentistry", "Ayurveda"]
+            },
+            {
+              "name": "Science Degrees",
+              "degrees": ["BSc (3 years)", "BPharm (4 years)", "BSc Nursing"],
+              "exams": ["University Entrance Tests"],
+              "specializations": ["Physics", "Chemistry", "Mathematics", "Biotechnology"]
+            }
+          ]
+        },
+        {
+          "stage": "After Degree",
+          "options": [
+            {
+              "name": "Post Graduation",
+              "degrees": ["MTech", "MS", "MD", "MSc", "MBA"],
+              "exams": ["GATE", "PGIMER", "CAT", "CMAT"],
+              "specializations": ["Specialized fields in Engineering, Medicine, Management"]
+            }
+          ]
+        }
+      ],
+      "governmentExams": [
+        {
+          "level": "After 12th",
+          "exams": [
+            {
+              "name": "JEE Main & Advanced",
+              "purpose": "Engineering Admissions",
+              "website": "https://jeemain.nta.nic.in",
+              "eligibility": "12th Science with PCM"
+            },
+            {
+              "name": "NEET UG",
+              "purpose": "Medical Admissions",
+              "website": "https://neet.nta.nic.in",
+              "eligibility": "12th Science with PCB"
+            },
+            {
+              "name": "NDA",
+              "purpose": "National Defence Academy",
+              "website": "https://upsc.gov.in",
+              "eligibility": "12th Pass"
+            }
+          ]
+        },
+        {
+          "level": "After Degree",
+          "exams": [
+            {
+              "name": "GATE",
+              "purpose": "Post Graduation in Engineering",
+              "website": "https://gate.iitkgp.ac.in",
+              "eligibility": "BTech/BE or equivalent"
+            },
+            {
+              "name": "UPSC ESE",
+              "purpose": "Engineering Services Examination",
+              "website": "https://upsc.gov.in",
+              "eligibility": "Engineering Degree"
+            },
+            {
+              "name": "ISRO Scientist",
+              "purpose": "Space Research Organization",
+              "website": "https://isro.gov.in",
+              "eligibility": "Engineering Degree"
+            }
+          ]
+        }
+      ],
+      "jobOpportunities": [
+        {
+          "field": "Engineering",
+          "jobs": ["Software Engineer", "Mechanical Engineer", "Civil Engineer", "Data Scientist"],
+          "salaryRange": "₹4-20 LPA",
+          "companies": ["TCS", "Infosys", "L&T", "Google", "Microsoft"]
+        },
+        {
+          "field": "Medical",
+          "jobs": ["Doctor", "Surgeon", "Dentist", "Pharmacist", "Medical Researcher"],
+          "salaryRange": "₹6-25 LPA",
+          "companies": ["AIIMS", "Apollo Hospitals", "Fortis", "Government Hospitals"]
+        },
+        {
+          "field": "Research & Development",
+          "jobs": ["Scientist", "Research Analyst", "Lab Technician", "Professor"],
+          "salaryRange": "₹4-15 LPA",
+          "companies": ["ISRO", "DRDO", "CSIR", "Universities"]
+        }
+      ]
+    },
+    {
+      "id": "commerce",
+      "name": "Commerce Stream",
+      "description": "For students interested in Business, Finance, Accounting and Entrepreneurship",
+      "icon": "fas fa-chart-line",
+      "subjects": ["Accountancy", "Business Studies", "Economics", "Mathematics"],
+      "professionalCourses": [
+        {
+          "name": "CA (Chartered Accountancy)",
+          "duration": "4.5-5 years",
+          "exams": ["CA Foundation", "CA Intermediate", "CA Final"],
+          "scope": "Auditing, Taxation, Financial Consulting",
+          "website": "https://www.icai.org"
+        },
+        {
+          "name": "CS (Company Secretary)",
+          "duration": "3-4 years",
+          "exams": ["CS Foundation", "CS Executive", "CS Professional"],
+          "scope": "Corporate Legal Compliance, Company Law",
+          "website": "https://www.icsi.edu"
+        },
+        {
+          "name": "CMA (Cost Management Accountant)",
+          "duration": "3-4 years",
+          "exams": ["CMA Foundation", "CMA Intermediate", "CMA Final"],
+          "scope": "Cost Accounting, Management Accounting",
+          "website": "https://icmai.in"
+        }
+      ],
+      "degreeCourses": [
+        {
+          "name": "BCom (Bachelor of Commerce)",
+          "duration": "3 years",
+          "specializations": ["Accounting", "Finance", "Taxation", "Banking"],
+          "furtherStudies": ["MBA", "MCom", "Professional Courses"]
+        },
+        {
+          "name": "BBA (Bachelor of Business Administration)",
+          "duration": "3 years",
+          "specializations": ["Marketing", "Finance", "HR", "Operations"],
+          "furtherStudies": ["MBA", "PGDM"]
+        },
+        {
+          "name": "Economics Honours",
+          "duration": "3 years",
+          "specializations": ["Microeconomics", "Macroeconomics", "Econometrics"],
+          "furtherStudies": ["MA Economics", "MBA", "Civil Services"]
+        }
+      ],
+      "governmentExams": [
+        {
+          "level": "After 12th",
+          "exams": [
+            {
+              "name": "CA Foundation",
+              "purpose": "Chartered Accountancy Entry",
+              "website": "https://www.icai.org",
+              "eligibility": "12th Pass"
+            }
+          ]
+        },
+        {
+          "level": "After Degree",
+          "exams": [
+            {
+              "name": "SSC CGL",
+              "purpose": "Staff Selection Commission Combined Graduate Level",
+              "website": "https://ssc.nic.in",
+              "eligibility": "Graduation"
+            },
+            {
+              "name": "Bank PO Exams",
+              "purpose": "Probationary Officer in Banks",
+              "website": "https://ibps.in",
+              "eligibility": "Graduation"
+            },
+            {
+              "name": "UPSC Civil Services",
+              "purpose": "IAS, IPS, IFS Officers",
+              "website": "https://upsc.gov.in",
+              "eligibility": "Graduation"
+            }
+          ]
+        }
+      ],
+      "jobOpportunities": [
+        {
+          "field": "Accounting & Finance",
+          "jobs": ["Accountant", "Financial Analyst", "Auditor", "Tax Consultant"],
+          "salaryRange": "₹3-12 LPA",
+          "companies": ["Big 4 CA Firms", "Banks", "Corporate Houses"]
+        },
+        {
+          "field": "Banking & Insurance",
+          "jobs": ["Bank PO", "Relationship Manager", "Insurance Advisor"],
+          "salaryRange": "₹4-15 LPA",
+          "companies": ["SBI", "HDFC Bank", "ICICI Bank", "LIC"]
+        },
+        {
+          "field": "Corporate Sector",
+          "jobs": ["HR Manager", "Marketing Executive", "Business Analyst"],
+          "salaryRange": "₹4-20 LPA",
+          "companies": ["Multinational Companies", "Indian Corporates", "Startups"]
+        }
+      ]
+    },
+    {
+      "id": "arts",
+      "name": "Arts/Humanities Stream",
+      "description": "For students interested in Social Sciences, Languages, Creative Arts and Civil Services",
+      "icon": "fas fa-palette",
+      "subjectCategories": [
+        {
+          "name": "Social Sciences",
+          "subjects": ["History", "Political Science", "Sociology", "Psychology", "Geography"]
+        },
+        {
+          "name": "Languages & Literature",
+          "subjects": ["English", "Hindi", "Regional Languages", "Journalism"]
+        },
+        {
+          "name": "Creative Arts",
+          "subjects": ["Fine Arts", "Music", "Dance", "Theatre"]
+        }
+      ],
+      "careerPaths": [
+        {
+          "category": "Civil Services & Government Jobs",
+          "options": [
+            {
+              "name": "UPSC Civil Services",
+              "posts": ["IAS", "IPS", "IFS", "IRS"],
+              "website": "https://upsc.gov.in",
+              "preparation": "1-2 years dedicated preparation"
+            },
+            {
+              "name": "SSC CGL",
+              "posts": ["Group A & B officers", "Auditor", "Accountant"],
+              "website": "https://ssc.nic.in",
+              "preparation": "6-12 months preparation"
+            },
+            {
+              "name": "State PSCs",
+              "posts": ["State Administration", "Police Services", "Revenue Services"],
+              "website": "State-specific websites",
+              "preparation": "1 year preparation"
+            }
+          ]
+        },
+        {
+          "category": "Professional Courses",
+          "options": [
+            {
+              "name": "BA LLB",
+              "duration": "5 years",
+              "scope": "Lawyer, Legal Advisor, Corporate Counsel",
+              "exams": ["CLAT", "AILET", "LSAT"]
+            },
+            {
+              "name": "BFA (Bachelor of Fine Arts)",
+              "duration": "4 years",
+              "scope": "Artist, Designer, Art Teacher",
+              "exams": ["University Entrance Tests"]
+            },
+            {
+              "name": "BJMC (Journalism & Mass Comm)",
+              "duration": "3 years",
+              "scope": "Journalist, Media Professional, Content Writer",
+              "exams": ["University Entrance Tests"]
+            }
+          ]
+        },
+        {
+          "category": "Teaching & Education",
+          "options": [
+            {
+              "name": "BEd",
+              "duration": "2 years",
+              "scope": "School Teacher, Education Consultant",
+              "eligibility": "Graduation in any stream"
+            },
+            {
+              "name": "MA + BEd",
+              "duration": "3 years integrated",
+              "scope": "Post Graduate Teacher",
+              "eligibility": "Graduation"
+            }
+          ]
+        }
+      ],
+      "governmentExams": [
+        {
+          "level": "After 12th",
+          "exams": [
+            {
+              "name": "CLAT",
+              "purpose": "Law Entrance Exam",
+              "website": "https://consortiumofnlus.ac.in",
+              "eligibility": "12th Pass"
+            }
+          ]
+        },
+        {
+          "level": "After Degree",
+          "exams": [
+            {
+              "name": "UPSC Civil Services",
+              "purpose": "Administrative Services",
+              "website": "https://upsc.gov.in",
+              "eligibility": "Graduation"
+            },
+            {
+              "name": "SSC CGL",
+              "purpose": "Government Officer Posts",
+              "website": "https://ssc.nic.in",
+              "eligibility": "Graduation"
+            },
+            {
+              "name": "CTET",
+              "purpose": "Central Teacher Eligibility Test",
+              "website": "https://ctet.nic.in",
+              "eligibility": "Graduation + BEd"
+            }
+          ]
+        }
+      ],
+      "jobOpportunities": [
+        {
+          "field": "Government Services",
+          "jobs": ["IAS Officer", "IPS Officer", "State Services", "Bank PO"],
+          "salaryRange": "₹6-20 LPA",
+          "sectors": ["Central Government", "State Government", "Public Sector"]
+        },
+        {
+          "field": "Education & Research",
+          "jobs": ["Professor", "Researcher", "School Teacher", "Education Consultant"],
+          "salaryRange": "₹3-15 LPA",
+          "sectors": ["Universities", "Schools", "Research Institutes"]
+        },
+        {
+          "field": "Media & Creative Arts",
+          "jobs": ["Journalist", "Content Writer", "Artist", "Designer"],
+          "salaryRange": "₹3-12 LPA",
+          "sectors": ["Media Houses", "Advertising", "Publishing", "Freelancing"]
+        }
+      ]
+    },
+    {
+      "id": "vocational",
+      "name": "Vocational Courses",
+      "description": "Skill-based education for immediate employment and entrepreneurship",
+      "icon": "fas fa-tools",
+      "courses": [
+        {
+          "type": "ITI Courses",
+          "duration": "1-2 years",
+          "fields": [
+            {
+              "name": "Engineering Trades",
+              "courses": ["Electrician (2 years)", "Fitter (2 years)", "Welder (1 year)", "Mechanic (2 years)"]
+            },
+            {
+              "name": "Non-Engineering Trades",
+              "courses": ["Computer Operator (1 year)", "Secretarial Practice (1 year)", "Hair & Skin Care (1 year)", "Photography (1 year)"]
+            }
+          ],
+          "jobOpportunities": ["Technician", "Mechanic", "Electrician", "Computer Operator"],
+          "salaryRange": "₹2-6 LPA"
+        },
+        {
+          "type": "Polytechnic Diploma",
+          "duration": "3 years",
+          "fields": [
+            {
+              "name": "Engineering Diploma",
+              "courses": ["Civil Engineering", "Mechanical Engineering", "Electrical Engineering", "Computer Science"]
+            },
+            {
+              "name": "Other Diplomas",
+              "courses": ["Fashion Technology", "Interior Design", "Hotel Management", "Animation"]
+            }
+          ],
+          "jobOpportunities": ["Junior Engineer", "Supervisor", "Technician", "Designer"],
+          "salaryRange": "₹3-8 LPA"
+        }
+      ],
+      "governmentSchemes": [
+        {
+          "name": "PMKVY (Pradhan Mantri Kaushal Vikas Yojana)",
+          "purpose": "Skill Development Training",
+          "website": "https://www.pmkvyofficial.org",
+          "benefits": ["Free Training", "Certification", "Placement Assistance"]
+        },
+        {
+          "name": "DDU-GKY (Deen Dayal Upadhyaya Grameen Kaushalya Yojana)",
+          "purpose": "Rural Youth Skill Training",
+          "website": "https://ddugky.gov.in",
+          "benefits": ["Free Residential Training", "Placement Guarantee"]
+        }
+      ],
+      "jobOpportunities": [
+        {
+          "field": "Technical Jobs",
+          "jobs": ["Electrician", "Mechanic", "Welder", "Fitter"],
+          "salaryRange": "₹2-6 LPA",
+          "sectors": ["Manufacturing", "Construction", "Automobile"]
+        },
+        {
+          "field": "Service Sector",
+          "jobs": ["Hotel Staff", "Beautician", "Computer Operator", "Receptionist"],
+          "salaryRange": "₹2-5 LPA",
+          "sectors": ["Hospitality", "IT", "Beauty & Wellness"]
+        },
+        {
+          "field": "Entrepreneurship",
+          "jobs": ["Workshop Owner", "Service Center", "Small Business"],
+          "salaryRange": "Varies based on business",
+          "support": ["MUDRA Loans", "Startup India", "State Schemes"]
+        }
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "category": "Engineering Entrance",
+      "exams": [
+        {
+          "name": "JEE Main",
+          "fullForm": "Joint Entrance Examination Main",
+          "purpose": "Engineering Admissions in NITs, IIITs, GFTIs",
+          "website": "https://jeemain.nta.nic.in",
+          "eligibility": "12th with PCM",
+          "syllabus": "Physics, Chemistry, Mathematics",
+          "frequency": "Twice a year"
+        },
+        {
+          "name": "JEE Advanced",
+          "fullForm": "Joint Entrance Examination Advanced",
+          "purpose": "Admission to IITs",
+          "website": "https://jeeadv.ac.in",
+          "eligibility": "Qualified JEE Main",
+          "syllabus": "Advanced PCM",
+          "frequency": "Once a year"
+        },
+        {
+          "name": "BITSAT",
+          "fullForm": "Birla Institute of Technology & Science Admission Test",
+          "purpose": "Admission to BITS Pilani, Goa, Hyderabad",
+          "website": "https://bitsadmission.com",
+          "eligibility": "12th with PCM and minimum 75%",
+          "syllabus": "Physics, Chemistry, Mathematics, English",
+          "frequency": "Once a year"
+        }
+      ]
+    },
+    {
+      "category": "Medical Entrance",
+      "exams": [
+        {
+          "name": "NEET UG",
+          "fullForm": "National Eligibility cum Entrance Test Undergraduate",
+          "purpose": "MBBS, BDS, AYUSH courses admission",
+          "website": "https://neet.nta.nic.in",
+          "eligibility": "12th with PCB and minimum 50%",
+          "syllabus": "Physics, Chemistry, Biology",
+          "frequency": "Once a year"
+        },
+        {
+          "name": "AIIMS MBBS",
+          "fullForm": "All India Institute of Medical Sciences MBBS",
+          "purpose": "Admission to AIIMS institutions",
+          "website": "https://aiimsexams.ac.in",
+          "eligibility": "12th with PCB",
+          "syllabus": "Physics, Chemistry, Biology, General Knowledge",
+          "frequency": "Once a year"
+        }
+      ]
+    },
+    {
+      "category": "Defense Services",
+      "exams": [
+        {
+          "name": "NDA",
+          "fullForm": "National Defence Academy",
+          "purpose": "Army, Navy, Air Force Officer Entry",
+          "website": "https://upsc.gov.in",
+          "eligibility": "12th Pass (Science preferred)",
+          "syllabus": "Mathematics, General Ability",
+          "frequency": "Twice a year"
+        },
+        {
+          "name": "CDS",
+          "fullForm": "Combined Defence Services",
+          "purpose": "Officer Entry in Army, Navy, Air Force",
+          "website": "https://upsc.gov.in",
+          "eligibility": "Graduation",
+          "syllabus": "English, General Knowledge, Elementary Mathematics",
+          "frequency": "Twice a year"
+        }
+      ]
+    }
+  ]
+}

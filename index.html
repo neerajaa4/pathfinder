@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathFinder - Complete Career Guide After 10th</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <h1><i class="fas fa-compass"></i> PathFinder</h1>
+            <p>Your Complete Guide to Career Success After 10th Grade</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero glass-card">
+            <div class="hero-content">
+                <h2>Find Your Perfect Career Path! 🚀</h2>
+                <p>Discover streams, degrees, exams, and job opportunities tailored for Indian students</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search courses, exams, careers...">
+                    <button onclick="searchCareers()"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Options Grid -->
+        <section class="quick-options glass-card">
+            <h2>Quick Access</h2>
+            <div class="options-grid">
+                <div class="option-card" onclick="showStreamSelection()">
+                    <i class="fas fa-stream"></i>
+                    <h3>Choose Your Stream</h3>
+                    <p>Science, Commerce, Arts Guide</p>
+                </div>
+                <div class="option-card" onclick="showExams()">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Government Exams</h3>
+                    <p>After 10th, Inter, Degree</p>
+                </div>
+                <div class="option-card" onclick="showDegrees()">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Degree Programs</h3>
+                    <p>UG, PG, Diploma Courses</p>
+                </div>
+                <div class="option-card" onclick="showJobs()">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Job Opportunities</h3>
+                    <p>Career Paths & Salaries</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stream Selection Section -->
+        <section id="streamSection" class="stream-section glass-card">
+            <h2>🎯 Select Your Preferred Subjects</h2>
+            <div class="subjects-grid">
+                <div class="subject-card" data-stream="science">
+                    <i class="fas fa-atom"></i>
+                    <h3>Science Stream</h3>
+                    <p>Physics, Chemistry, Mathematics, Biology</p>
+                    <button onclick="selectStream('science')">Explore Science</button>
+                </div>
+                <div class="subject-card" data-stream="commerce">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Commerce Stream</h3>
+                    <p>Accounts, Business, Economics</p>
+                    <button onclick="selectStream('commerce')">Explore Commerce</button>
+                </div>
+                <div class="subject-card" data-stream="arts">
+                    <i class="fas fa-palette"></i>
+                    <h3>Arts/Humanities</h3>
+                    <p>History, Psychology, Languages</p>
+                    <button onclick="selectStream('arts')">Explore Arts</button>
+                </div>
+                <div class="subject-card" data-stream="vocational">
+                    <i class="fas fa-tools"></i>
+                    <h3>Vocational Courses</h3>
+                    <p>ITI, Diploma, Skill-based</p>
+                    <button onclick="selectStream('vocational')">Explore Vocational</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Exams Section -->
+        <section class="exams-section glass-card">
+            <h2>📝 Popular Government Exams</h2>
+            <div class="exams-grid">
+                <div class="exam-card">
+                    <h3>After 10th</h3>
+                    <ul>
+                        <li>NDA (National Defence Academy)</li>
+                        <li>Indian Army Soldier Recruitment</li>
+                        <li>RRB Group D</li>
+                        <li>SSC CHSL</li>
+                    </ul>
+                </div>
+                <div class="exam-card">
+                    <h3>After Inter</h3>
+                    <ul>
+                        <li>JEE Main & Advanced</li>
+                        <li>NEET UG</li>
+                        <li>CLAT</li>
+                        <li>NDA (After 12th)</li>
+                    </ul>
+                </div>
+                <div class="exam-card">
+                    <h3>After Degree</h3>
+                    <ul>
+                        <li>UPSC Civil Services</li>
+                        <li>SSC CGL</li>
+                        <li>Bank PO Exams</li>
+                        <li>State PSC Exams</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="results-section glass-card" style="display: none;">
+            <h2>Your Career Recommendations</h2>
+            <div id="recommendationOutput"></div>
+        </section>
+
+        <!-- Search Results -->
+        <section id="searchResults" class="search-results glass-card" style="display: none;">
+            <h2>Search Results</h2>
+            <div id="searchResultsOutput"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container">
+            <p>&copy; 2024 PathFinder - Complete Career Guidance Platform</p>
+            <p>Made with ❤️ for Indian Students</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="career-data.js"></script>
+</body>
+</html>

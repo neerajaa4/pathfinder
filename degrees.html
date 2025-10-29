@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Programs - PathFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <h1><i class="fas fa-graduation-cap"></i> Degree Programs</h1>
+            <p>Complete Guide to Undergraduate, Postgraduate and Professional Degrees in India</p>
+        </div>
+    </header>
+
+    <!-- Back to Home -->
+    <div class="container">
+        <div class="back-button">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Degree Overview -->
+        <section class="degrees-overview glass-card">
+            <h2>🎓 Understanding Degree Programs in India</h2>
+            <p class="overview-text">Choose the right degree program that aligns with your career goals and stream selection.</p>
+            
+            <div class="degree-types-grid">
+                <div class="degree-type-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Undergraduate (UG)</h3>
+                    <p>After 12th - Bachelor's Degrees</p>
+                    <span>3-5 years duration</span>
+                </div>
+                <div class="degree-type-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Postgraduate (PG)</h3>
+                    <p>After Graduation - Master's Degrees</p>
+                    <span>2-3 years duration</span>
+                </div>
+                <div class="degree-type-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Professional Courses</h3>
+                    <p>Career-focused specialized programs</p>
+                    <span>3-5 years duration</span>
+                </div>
+                <div class="degree-type-card">
+                    <i class="fas fa-diploma"></i>
+                    <h3>Diploma & Certificates</h3>
+                    <p>Short-term skill-based programs</p>
+                    <span>6 months - 2 years</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stream-wise Degree Navigation -->
+        <section class="stream-navigation glass-card">
+            <h2>🔍 Find Degrees by Your Stream</h2>
+            <div class="stream-nav-grid">
+                <div class="stream-nav-card" onclick="showStreamDegrees('science')">
+                    <i class="fas fa-atom"></i>
+                    <h4>Science Stream</h4>
+                    <p>Engineering, Medical, Science Degrees</p>
+                </div>
+                <div class="stream-nav-card" onclick="showStreamDegrees('commerce')">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Commerce Stream</h4>
+                    <p>Business, Finance, Management</p>
+                </div>
+                <div class="stream-nav-card" onclick="showStreamDegrees('arts')">
+                    <i class="fas fa-palette"></i>
+                    <h4>Arts Stream</h4>
+                    <p>Humanities, Social Sciences, Arts</p>
+                </div>
+                <div class="stream-nav-card" onclick="showStreamDegrees('all')">
+                    <i class="fas fa-globe"></i>
+                    <h4>All Streams</h4>
+                    <p>Explore all degree options</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Stream Degrees -->
+        <section id="scienceDegrees" class="stream-degrees-section glass-card">
+            <div class="stream-header">
+                <i class="fas fa-atom"></i>
+                <div>
+                    <h2>Science Stream Degrees</h2>
+                    <p>Engineering, Medical, Pure Sciences and Research oriented programs</p>
+                </div>
+            </div>
+
+            <div class="degrees-categories">
+                <!-- Engineering Degrees -->
+                <div class="degree-category">
+                    <h3>🔧 Engineering & Technology</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>BTech/BE</h4>
+                            <p class="degree-duration">Duration: 4 years</p>
+                            <p class="degree-desc">Bachelor of Technology/Engineering</p>
+                            <div class="specializations">
+                                <h5>Popular Specializations:</h5>
+                                <ul>
+                                    <li>Computer Science & Engineering</li>
+                                    <li>Mechanical Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Electrical Engineering</li>
+                                    <li>Electronics & Communication</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">JEE Main</span>
+                                <span class="exam-tag">JEE Advanced</span>
+                                <span class="exam-tag">BITSAT</span>
+                                <span class="exam-tag">State CETs</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Software Engineer, Mechanical Engineer, Civil Engineer, Electrical Engineer, Data Scientist</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BArch</h4>
+                            <p class="degree-duration">Duration: 5 years</p>
+                            <p class="degree-desc">Bachelor of Architecture</p>
+                            <div class="specializations">
+                                <h5>Focus Areas:</h5>
+                                <ul>
+                                    <li>Building Design</li>
+                                    <li>Urban Planning</li>
+                                    <li>Interior Design</li>
+                                    <li>Landscape Architecture</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">NATA</span>
+                                <span class="exam-tag">JEE Main Paper 2</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Architect, Urban Planner, Interior Designer, Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Degrees -->
+                <div class="degree-category">
+                    <h3>🏥 Medical & Healthcare</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>MBBS</h4>
+                            <p class="degree-duration">Duration: 5.5 years</p>
+                            <p class="degree-desc">Bachelor of Medicine, Bachelor of Surgery</p>
+                            <div class="specializations">
+                                <h5>Post-Graduation Options:</h5>
+                                <ul>
+                                    <li>MD (Doctor of Medicine)</li>
+                                    <li>MS (Master of Surgery)</li>
+                                    <li>Diploma Courses</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">NEET UG</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Medical Doctor, Surgeon, Physician, Medical Researcher</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BDS</h4>
+                            <p class="degree-duration">Duration: 5 years</p>
+                            <p class="degree-desc">Bachelor of Dental Surgery</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>Orthodontics</li>
+                                    <li>Oral Surgery</li>
+                                    <li>Periodontics</li>
+                                    <li>Prosthodontics</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">NEET UG</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Dentist, Oral Surgeon, Dental Researcher, Professor</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BPharm</h4>
+                            <p class="degree-duration">Duration: 4 years</p>
+                            <p class="degree-desc">Bachelor of Pharmacy</p>
+                            <div class="specializations">
+                                <h5>Areas of Work:</h5>
+                                <ul>
+                                    <li>Pharmaceutical Industry</li>
+                                    <li>Drug Research</li>
+                                    <li>Hospital Pharmacy</li>
+                                    <li>Retail Pharmacy</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">State Pharmacy Exams</span>
+                                <span class="exam-tag">GPAT for PG</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Pharmacist, Drug Inspector, Medical Representative, Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science Degrees -->
+                <div class="degree-category">
+                    <h3>🔬 Pure Sciences & Research</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>BSc</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Science</p>
+                            <div class="specializations">
+                                <h5>Popular Streams:</h5>
+                                <ul>
+                                    <li>BSc Physics</li>
+                                    <li>BSc Chemistry</li>
+                                    <li>BSc Mathematics</li>
+                                    <li>BSc Biology</li>
+                                    <li>BSc Computer Science</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Admission:</h5>
+                                <span class="exam-tag">Merit-based</span>
+                                <span class="exam-tag">University Entrances</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Research Scientist, Lab Technician, Data Analyst, Teacher</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BSc Nursing</h4>
+                            <p class="degree-duration">Duration: 4 years</p>
+                            <p class="degree-desc">Bachelor of Science in Nursing</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>Critical Care Nursing</li>
+                                    <li>Pediatric Nursing</li>
+                                    <li>Psychiatric Nursing</li>
+                                    <li>Community Health Nursing</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">State Nursing Exams</span>
+                                <span class="exam-tag">AIIMS Nursing</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Staff Nurse, Nursing Officer, Nursing Educator, Supervisor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commerce Stream Degrees -->
+        <section id="commerceDegrees" class="stream-degrees-section glass-card" style="display: none;">
+            <div class="stream-header">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <h2>Commerce Stream Degrees</h2>
+                    <p>Business, Finance, Accounting and Management programs</p>
+                </div>
+            </div>
+
+            <div class="degrees-categories">
+                <!-- Professional Courses -->
+                <div class="degree-category">
+                    <h3>📊 Professional Courses</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card professional">
+                            <h4>CA</h4>
+                            <p class="degree-duration">Duration: 4.5-5 years</p>
+                            <p class="degree-desc">Chartered Accountancy</p>
+                            <div class="course-structure">
+                                <h5>Course Levels:</h5>
+                                <ul>
+                                    <li>CA Foundation (8 months)</li>
+                                    <li>CA Intermediate (9 months)</li>
+                                    <li>Articleship (3 years)</li>
+                                    <li>CA Final (1.5 years)</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Registration:</h5>
+                                <span class="exam-tag">After 12th</span>
+                                <span class="exam-tag">Direct Entry after Graduation</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Chartered Accountant, Financial Advisor, Tax Consultant, Auditor</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card professional">
+                            <h4>CS</h4>
+                            <p class="degree-duration">Duration: 3-4 years</p>
+                            <p class="degree-desc">Company Secretary</p>
+                            <div class="course-structure">
+                                <h5>Course Levels:</h5>
+                                <ul>
+                                    <li>CS Foundation (8 months)</li>
+                                    <li>CS Executive (9 months)</li>
+                                    <li>Management Training (15 months)</li>
+                                    <li>CS Professional (15 months)</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Registration:</h5>
+                                <span class="exam-tag">After 12th</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Company Secretary, Legal Advisor, Compliance Officer, Corporate Lawyer</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card professional">
+                            <h4>CMA</h4>
+                            <p class="degree-duration">Duration: 3-4 years</p>
+                            <p class="degree-desc">Cost Management Accountant</p>
+                            <div class="course-structure">
+                                <h5>Course Levels:</h5>
+                                <ul>
+                                    <li>CMA Foundation (6 months)</li>
+                                    <li>CMA Intermediate (9 months)</li>
+                                    <li>Practical Training (15 months)</li>
+                                    <li>CMA Final (12 months)</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Registration:</h5>
+                                <span class="exam-tag">After 12th</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Cost Accountant, Management Accountant, Financial Analyst, Cost Consultant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Degrees -->
+                <div class="degree-category">
+                    <h3>🎓 Regular Degree Programs</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>BCom</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Commerce</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>BCom (Honours)</li>
+                                    <li>BCom Accounting & Finance</li>
+                                    <li>BCom Banking & Insurance</li>
+                                    <li>BCom Computer Applications</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Admission:</h5>
+                                <span class="exam-tag">Merit-based</span>
+                                <span class="exam-tag">University Entrances</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Accountant, Banker, Financial Analyst, Tax Consultant</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BBA</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Business Administration</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>BBA Finance</li>
+                                    <li>BBA Marketing</li>
+                                    <li>BBA HR Management</li>
+                                    <li>BBA International Business</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">SET</span>
+                                <span class="exam-tag">IPU CET</span>
+                                <span class="exam-tag">University Entrances</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Business Analyst, Marketing Executive, HR Manager, Entrepreneur</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>Economics Honours</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">BA/BSc in Economics</p>
+                            <div class="specializations">
+                                <h5>Focus Areas:</h5>
+                                <ul>
+                                    <li>Microeconomics</li>
+                                    <li>Macroeconomics</li>
+                                    <li>Econometrics</li>
+                                    <li>Development Economics</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Admission:</h5>
+                                <span class="exam-tag">Merit-based</span>
+                                <span class="exam-tag">DUET for Delhi University</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Economist, Policy Analyst, Banker, Data Analyst, Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Arts Stream Degrees -->
+        <section id="artsDegrees" class="stream-degrees-section glass-card" style="display: none;">
+            <div class="stream-header">
+                <i class="fas fa-palette"></i>
+                <div>
+                    <h2>Arts Stream Degrees</h2>
+                    <p>Humanities, Social Sciences, Languages and Creative Arts programs</p>
+                </div>
+            </div>
+
+            <div class="degrees-categories">
+                <!-- Law & Civil Services -->
+                <div class="degree-category">
+                    <h3>⚖️ Law & Civil Services</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>BA LLB</h4>
+                            <p class="degree-duration">Duration: 5 years</p>
+                            <p class="degree-desc">Integrated Bachelor of Arts & Law</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>Constitutional Law</li>
+                                    <li>Criminal Law</li>
+                                    <li>Corporate Law</li>
+                                    <li>International Law</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">CLAT</span>
+                                <span class="exam-tag">AILET</span>
+                                <span class="exam-tag">LSAT</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Lawyer, Judge, Legal Advisor, Corporate Counsel, Public Prosecutor</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BA for Civil Services</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Arts with Civil Services Focus</p>
+                            <div class="specializations">
+                                <h5>Recommended Subjects:</h5>
+                                <ul>
+                                    <li>History</li>
+                                    <li>Political Science</li>
+                                    <li>Public Administration</li>
+                                    <li>Economics</li>
+                                    <li>Sociology</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Target Exams:</h5>
+                                <span class="exam-tag">UPSC Civil Services</span>
+                                <span class="exam-tag">State PSCs</span>
+                                <span class="exam-tag">SSC CGL</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>IAS, IPS, IFS Officer, State Services, Government Administrator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Humanities & Social Sciences -->
+                <div class="degree-category">
+                    <h3>📚 Humanities & Social Sciences</h3>
+                    <div class="degrees-grid">
+                        <div class="degree-card">
+                            <h4>BA (General)</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Arts</p>
+                            <div class="specializations">
+                                <h5>Subject Combinations:</h5>
+                                <ul>
+                                    <li>English, History, Political Science</li>
+                                    <li>Psychology, Sociology, Economics</li>
+                                    <li>Geography, History, Public Admin</li>
+                                    <li>Languages, Literature, Philosophy</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Admission:</h5>
+                                <span class="exam-tag">Merit-based</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Content Writer, Teacher, Social Worker, Researcher, Journalist</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BA Journalism</h4>
+                            <p class="degree-duration">Duration: 3 years</p>
+                            <p class="degree-desc">Bachelor of Arts in Journalism</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>Print Journalism</li>
+                                    <li>Broadcast Journalism</li>
+                                    <li>Digital Media</li>
+                                    <li>Public Relations</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Entrance Exams:</h5>
+                                <span class="exam-tag">IIMC Entrance</span>
+                                <span class="exam-tag">University Entrances</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Journalist, News Anchor, Content Creator, Media Manager, PR Executive</p>
+                            </div>
+                        </div>
+
+                        <div class="degree-card">
+                            <h4>BFA</h4>
+                            <p class="degree-duration">Duration: 4 years</p>
+                            <p class="degree-desc">Bachelor of Fine Arts</p>
+                            <div class="specializations">
+                                <h5>Specializations:</h5>
+                                <ul>
+                                    <li>Painting</li>
+                                    <li>Sculpture</li>
+                                    <li>Applied Arts</li>
+                                    <li>Visual Communication</li>
+                                </ul>
+                            </div>
+                            <div class="entrance-exams">
+                                <h5>Admission:</h5>
+                                <span class="exam-tag">Portfolio Review</span>
+                                <span class="exam-tag">Practical Test</span>
+                            </div>
+                            <div class="career-options">
+                                <h5>Career Paths:</h5>
+                                <p>Artist, Graphic Designer, Art Director, Illustrator, Animator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post Graduate Degrees -->
+        <section class="pg-degrees-section glass-card">
+            <div class="stream-header">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <h2>Post Graduate Degrees</h2>
+                    <p>Master's, Doctoral and Advanced Specialization programs</p>
+                </div>
+            </div>
+
+            <div class="pg-categories">
+                <div class="pg-category">
+                    <h3>🎯 Master's Degrees (2 years)</h3>
+                    <div class="pg-grid">
+                        <div class="pg-card">
+                            <h4>MTech/ME</h4>
+                            <p>Master of Technology/Engineering</p>
+                            <span>Entrance: GATE</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>MBA</h4>
+                            <p>Master of Business Administration</p>
+                            <span>Entrance: CAT, XAT, MAT</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>MSc</h4>
+                            <p>Master of Science</p>
+                            <span>Entrance: IIT JAM, University Tests</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>MA</h4>
+                            <p>Master of Arts</p>
+                            <span>Admission: Merit/Entrance</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>MCom</h4>
+                            <p>Master of Commerce</p>
+                            <span>Admission: Merit-based</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>MD/MS</h4>
+                            <p>Medical Post Graduation</p>
+                            <span>Entrance: NEET PG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pg-category">
+                    <h3>🔬 Doctoral Programs (3-5 years)</h3>
+                    <div class="pg-grid">
+                        <div class="pg-card">
+                            <h4>PhD</h4>
+                            <p>Doctor of Philosophy</p>
+                            <span>Entrance: UGC NET, GATE</span>
+                        </div>
+                        <div class="pg-card">
+                            <h4>DM/MCh</h4>
+                            <p>Medical Super Specialization</p>
+                            <span>Entrance: NEET SS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container">
+            <p>&copy; 2024 PathFinder - Complete Career Guidance Platform</p>
+            <p>Made with ❤️ for Indian Students</p>
+        </div>
+    </footer>
+
+    <script>
+        function showStreamDegrees(stream) {
+            // Hide all degree sections first
+            document.querySelectorAll('.stream-degrees-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Remove active class from all nav cards
+            document.querySelectorAll('.stream-nav-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Show selected stream or all streams
+            if (stream === 'all') {
+                document.querySelectorAll('.stream-degrees-section').forEach(section => {
+                    section.style.display = 'block';
+                });
+            } else {
+                document.getElementById(stream + 'Degrees').style.display = 'block';
+            }
+            
+            // Add active class to clicked card
+            event.currentTarget.classList.add('active');
+            
+            // Scroll to degrees section
+            document.getElementById(stream + 'Degrees').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Show science degrees by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showStreamDegrees('science');
+        });
+    </script>
+
+    <style>
+        /* Additional Styles for Degrees Page */
+        .degrees-overview {
+            text-align: center;
+        }
+
+        .overview-text {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .degree-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .degree-type-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .degree-type-card:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .degree-type-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .degree-type-card h3 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .degree-type-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .degree-type-card span {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .stream-navigation {
+            text-align: center;
+        }
+
+        .stream-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stream-nav-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .stream-nav-card:hover,
+        .stream-nav-card.active {
+            background: white;
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        .stream-nav-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stream-nav-card h4 {
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .stream-nav-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .stream-degrees-section {
+            margin-top: 2rem;
+        }
+
+        .stream-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .stream-header i {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stream-header h2 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .stream-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        .degree-category {
+            margin-bottom: 3rem;
+        }
+
+        .degree-category h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .degrees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .degree-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--success);
+        }
+
+        .degree-card.professional {
+            border-left-color: var(--warning);
+        }
+
+        .degree-card:hover {
+            transform: translateY(-3px);
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .degree-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .degree-duration {
+            color: var(--danger);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .degree-desc {
+            color: #666;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .specializations h5,
+        .course-structure h5,
+        .entrance-exams h5,
+        .career-options h5 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .specializations ul,
+        .course-structure ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .specializations li,
+        .course-structure li {
+            padding: 0.2rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .specializations li:before,
+        .course-structure li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .entrance-exams {
+            margin-bottom: 1rem;
+        }
+
+        .exam-tag {
+            display: inline-block;
+            background: var(--info);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .career-options p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .pg-degrees-section {
+            margin-top: 3rem;
+        }
+
+        .pg-category {
+            margin-bottom: 2rem;
+        }
+
+        .pg-category h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .pg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .pg-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pg-card:hover {
+            transform: translateY(-2px);
+            background: white;
+        }
+
+        .pg-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .pg-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pg-card span {
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 768px) {
+            .degree-types-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stream-nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .degrees-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pg-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stream-nav-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pg-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

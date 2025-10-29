@@ -1,0 +1,425 @@
+{
+  "examCategories": [
+    {
+      "category": "Engineering Entrance",
+      "icon": "fas fa-cogs",
+      "exams": [
+        {
+          "name": "JEE Main",
+          "fullForm": "Joint Entrance Examination Main",
+          "purpose": "Admission to NITs, IIITs, GFTIs and other engineering colleges",
+          "conductingBody": "National Testing Agency (NTA)",
+          "officialWebsite": "https://jeemain.nta.nic.in",
+          "eligibility": "12th with Physics, Chemistry, Mathematics with 75% marks",
+          "ageLimit": "No age limit",
+          "attempts": "3 consecutive years",
+          "examPattern": "Computer Based Test (CBT)",
+          "subjects": ["Physics", "Chemistry", "Mathematics"],
+          "totalMarks": 300,
+          "duration": "3 hours",
+          "questionType": "MCQ + Numerical Value",
+          "negativeMarking": "Yes",
+          "applicationFee": "₹1000 (General), ₹500 (SC/ST)",
+          "importantDates": {
+            "registration": "December - January",
+            "admitCard": "February",
+            "examDate": "February - April",
+            "result": "April"
+          },
+          "syllabus": "Class 11th & 12th Physics, Chemistry, Mathematics NCERT syllabus",
+          "preparationTips": [
+            "Focus on NCERT books",
+            "Practice previous year papers",
+            "Time management practice",
+            "Regular mock tests"
+          ],
+          "topColleges": ["NITs", "IIITs", "GFTIs", "State Engineering Colleges"],
+          "careerPaths": ["BTech", "BE", "BArch", "BPlanning"]
+        },
+        {
+          "name": "JEE Advanced",
+          "fullForm": "Joint Entrance Examination Advanced",
+          "purpose": "Admission to Indian Institutes of Technology (IITs)",
+          "conductingBody": "IITs (Rotating Basis)",
+          "officialWebsite": "https://jeeadv.ac.in",
+          "eligibility": "Top 2,50,000 rank holders in JEE Main",
+          "ageLimit": "Maximum 25 years",
+          "attempts": "2 attempts in consecutive years",
+          "examPattern": "Computer Based Test (CBT) - Two Papers",
+          "subjects": ["Physics", "Chemistry", "Mathematics"],
+          "totalMarks": 360,
+          "duration": "3 hours each paper",
+          "questionType": "MCQ, Numerical, Matrix Match, Paragraph",
+          "negativeMarking": "Yes",
+          "applicationFee": "₹2800 (General), ₹1400 (SC/ST)",
+          "importantDates": {
+            "registration": "May",
+            "admitCard": "May",
+            "examDate": "June",
+            "result": "June"
+          },
+          "syllabus": "Advanced topics from Class 11th & 12th PCM",
+          "preparationTips": [
+            "Strong conceptual understanding",
+            "Problem solving speed",
+            "Advanced mathematics practice",
+            "IIT JEE specific coaching"
+          ],
+          "topColleges": ["IITs", "ISM Dhanbad"],
+          "careerPaths": ["BTech from IITs", "Research", "Higher Studies Abroad"]
+        },
+        {
+          "name": "BITSAT",
+          "fullForm": "Birla Institute of Technology & Science Admission Test",
+          "purpose": "Admission to BITS Pilani, Goa, Hyderabad campuses",
+          "conductingBody": "BITS Pilani",
+          "officialWebsite": "https://bitsadmission.com",
+          "eligibility": "12th with PCM and minimum 75% aggregate",
+          "ageLimit": "No age limit",
+          "attempts": "Once per year",
+          "examPattern": "Computer Based Online Test",
+          "subjects": ["Physics", "Chemistry", "Mathematics", "English", "Logical Reasoning"],
+          "totalMarks": 390,
+          "duration": "3 hours",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes",
+          "applicationFee": "₹3400 (Male), ₹2900 (Female)",
+          "importantDates": {
+            "registration": "January - March",
+            "admitCard": "April",
+            "examDate": "May - June",
+            "result": "June"
+          },
+          "syllabus": "Class 11th & 12th PCM + English Proficiency + Logical Reasoning",
+          "topColleges": ["BITS Pilani", "BITS Goa", "BITS Hyderabad"],
+          "careerPaths": ["BE", "MSc", "Higher Studies", "Placements in Top Companies"]
+        }
+      ]
+    },
+    {
+      "category": "Medical Entrance",
+      "icon": "fas fa-stethoscope",
+      "exams": [
+        {
+          "name": "NEET UG",
+          "fullForm": "National Eligibility cum Entrance Test Undergraduate",
+          "purpose": "Admission to MBBS, BDS, AYUSH courses across India",
+          "conductingBody": "National Testing Agency (NTA)",
+          "officialWebsite": "https://neet.nta.nic.in",
+          "eligibility": "12th with Physics, Chemistry, Biology/Biotechnology with 50% marks",
+          "ageLimit": "Minimum 17 years, Maximum 25 years (30 for reserved)",
+          "attempts": "No limit till age limit",
+          "examPattern": "Pen and Paper Based Test",
+          "subjects": ["Physics", "Chemistry", "Biology"],
+          "totalMarks": 720,
+          "duration": "3 hours 20 minutes",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes",
+          "applicationFee": "₹1600 (General), ₹1500 (OBC), ₹900 (SC/ST)",
+          "importantDates": {
+            "registration": "March - April",
+            "admitCard": "April",
+            "examDate": "May",
+            "result": "June"
+          },
+          "syllabus": "Class 11th & 12th Physics, Chemistry, Biology NCERT syllabus",
+          "preparationTips": [
+            "NCERT books are bible",
+            "Diagram practice for biology",
+            "Regular revision",
+            "Mock tests for speed"
+          ],
+          "topColleges": ["AIIMS", "JIPMER", "Government Medical Colleges", "Private Medical Colleges"],
+          "careerPaths": ["MBBS", "BDS", "BAMS", "BHMS", "Medical Research"]
+        },
+        {
+          "name": "AIIMS MBBS",
+          "fullForm": "All India Institute of Medical Sciences MBBS",
+          "purpose": "Admission to AIIMS institutions across India",
+          "conductingBody": "AIIMS Delhi",
+          "officialWebsite": "https://aiimsexams.ac.in",
+          "eligibility": "12th with PCB and English with 60% marks",
+          "ageLimit": "Minimum 17 years",
+          "attempts": "No limit",
+          "examPattern": "Computer Based Test",
+          "subjects": ["Physics", "Chemistry", "Biology", "General Knowledge", "Aptitude"],
+          "totalMarks": 200,
+          "duration": "3 hours 30 minutes",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (1/3 mark deduction)",
+          "applicationFee": "₹1500 (General), ₹1200 (OBC), ₹800 (SC/ST)",
+          "importantDates": {
+            "registration": "January - February",
+            "admitCard": "May",
+            "examDate": "May - June",
+            "result": "June"
+          },
+          "syllabus": "Class 11th & 12th PCB + GK + Logical Reasoning",
+          "topColleges": ["AIIMS Delhi", "AIIMS Jodhpur", "AIIMS Bhubaneswar", "All AIIMS"],
+          "careerPaths": ["MBBS from AIIMS", "Super Specialization", "Medical Research"]
+        }
+      ]
+    },
+    {
+      "category": "Defense Services",
+      "icon": "fas fa-shield-alt",
+      "exams": [
+        {
+          "name": "NDA",
+          "fullForm": "National Defence Academy",
+          "purpose": "Entry to Army, Navy, Air Force wings of NDA",
+          "conductingBody": "Union Public Service Commission (UPSC)",
+          "officialWebsite": "https://upsc.gov.in",
+          "eligibility": "12th Pass (Science for Air Force and Navy)",
+          "ageLimit": "16.5 to 19.5 years",
+          "attempts": "6 attempts",
+          "examPattern": "Written Test + SSB Interview",
+          "subjects": ["Mathematics", "General Ability Test"],
+          "totalMarks": 900,
+          "duration": "2 hours 30 minutes each paper",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (0.33 marks deduction)",
+          "applicationFee": "₹100",
+          "importantDates": {
+            "registration": "December & June",
+            "admitCard": "April & September",
+            "examDate": "April & September",
+            "result": "May & October"
+          },
+          "syllabus": "12th level Mathematics + English, GK, Physics, Chemistry, History, Geography, Current Affairs",
+          "selectionProcess": [
+            "Written Examination",
+            "SSB Interview (5 days)",
+            "Medical Examination",
+            "Final Merit List"
+          ],
+          "training": "3 years at NDA Khadakwasla + 1 year at respective service academy",
+          "careerPaths": ["Army Officer", "Navy Officer", "Air Force Officer", "Higher Command"]
+        },
+        {
+          "name": "CDS",
+          "fullForm": "Combined Defence Services",
+          "purpose": "Officer Entry in Indian Army, Navy, Air Force",
+          "conductingBody": "Union Public Service Commission (UPSC)",
+          "officialWebsite": "https://upsc.gov.in",
+          "eligibility": "Graduation for Army, Engineering for Navy/Air Force",
+          "ageLimit": "19 to 24 years",
+          "attempts": "No limit till age limit",
+          "examPattern": "Written Test + SSB Interview",
+          "subjects": ["English", "General Knowledge", "Elementary Mathematics"],
+          "totalMarks": 300,
+          "duration": "2 hours each paper",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (0.33 marks deduction)",
+          "applicationFee": "₹200",
+          "importantDates": {
+            "registration": "October & May",
+            "admitCard": "February & July",
+            "examDate": "February & September",
+            "result": "April & November"
+          },
+          "syllabus": "Graduation level English, GK, and Mathematics",
+          "academies": ["IMA Dehradun", "INA Ezhimala", "AFA Hyderabad", "OTA Chennai"],
+          "careerPaths": ["Army Officer", "Navy Officer", "Air Force Officer", "Defense Strategist"]
+        }
+      ]
+    },
+    {
+      "category": "Law Entrance",
+      "icon": "fas fa-gavel",
+      "exams": [
+        {
+          "name": "CLAT",
+          "fullForm": "Common Law Admission Test",
+          "purpose": "Admission to National Law Universities (NLUs)",
+          "conductingBody": "Consortium of NLUs",
+          "officialWebsite": "https://consortiumofnlus.ac.in",
+          "eligibility": "12th Pass with 45% marks (40% for SC/ST)",
+          "ageLimit": "No age limit for UG",
+          "attempts": "No limit",
+          "examPattern": "Computer Based Test",
+          "subjects": ["English", "Current Affairs", "Legal Reasoning", "Logical Reasoning", "Quantitative Techniques"],
+          "totalMarks": 150,
+          "duration": "2 hours",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (0.25 marks deduction)",
+          "applicationFee": "₹4000 (General), ₹3500 (OBC), ₹3000 (SC/ST)",
+          "importantDates": {
+            "registration": "January - March",
+            "admitCard": "April",
+            "examDate": "May",
+            "result": "May"
+          },
+          "syllabus": "Class 12th level English, Mathematics, Legal Aptitude, General Knowledge",
+          "topNLUs": ["NLSIU Bangalore", "NALSAR Hyderabad", "NUJS Kolkata", "NLU Delhi"],
+          "careerPaths": ["Lawyer", "Corporate Counsel", "Judge", "Legal Advisor", "Policy Maker"]
+        },
+        {
+          "name": "AILET",
+          "fullForm": "All India Law Entrance Test",
+          "purpose": "Admission to National Law University Delhi",
+          "conductingBody": "NLU Delhi",
+          "officialWebsite": "https://nludelhi.ac.in",
+          "eligibility": "12th Pass with 50% marks (45% for SC/ST)",
+          "ageLimit": "20 years for UG",
+          "attempts": "No limit till age limit",
+          "examPattern": "Pen and Paper Based Test",
+          "subjects": ["English", "General Knowledge", "Legal Aptitude", "Logical Reasoning", "Elementary Mathematics"],
+          "totalMarks": 150,
+          "duration": "1 hour 30 minutes",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (0.25 marks deduction)",
+          "applicationFee": "₹3050 (General), ₹1050 (SC/ST)",
+          "importantDates": {
+            "registration": "January - April",
+            "admitCard": "April",
+            "examDate": "May",
+            "result": "May"
+          },
+          "syllabus": "Similar to CLAT with focus on legal aptitude",
+          "careerPaths": ["BA LLB from NLU Delhi", "Corporate Law", "Litigation", "Judicial Services"]
+        }
+      ]
+    },
+    {
+      "category": "Management Entrance",
+      "icon": "fas fa-briefcase",
+      "exams": [
+        {
+          "name": "CAT",
+          "fullForm": "Common Admission Test",
+          "purpose": "Admission to IIMs and other management institutes",
+          "conductingBody": "IIMs (Rotating Basis)",
+          "officialWebsite": "https://iimcat.ac.in",
+          "eligibility": "Graduation with 50% marks (45% for SC/ST)",
+          "ageLimit": "No age limit",
+          "attempts": "No limit",
+          "examPattern": "Computer Based Test",
+          "subjects": ["Verbal Ability", "Reading Comprehension", "Data Interpretation", "Logical Reasoning", "Quantitative Ability"],
+          "totalMarks": 300,
+          "duration": "2 hours",
+          "questionType": "MCQ + TITA (Type In The Answer)",
+          "negativeMarking": "Yes (1 mark deduction for wrong MCQ)",
+          "applicationFee": "₹2400 (General), ₹1200 (SC/ST)",
+          "importantDates": {
+            "registration": "August - September",
+            "admitCard": "October",
+            "examDate": "November",
+            "result": "January"
+          },
+          "syllabus": "Graduation level Mathematics, English, Logical Reasoning",
+          "topColleges": ["IIMs", "FMS Delhi", "SPJIMR Mumbai", "MDI Gurgaon"],
+          "careerPaths": ["MBA", "Management Consultant", "Business Analyst", "Entrepreneur"]
+        }
+      ]
+    },
+    {
+      "category": "Civil Services",
+      "icon": "fas fa-landmark",
+      "exams": [
+        {
+          "name": "UPSC Civil Services",
+          "fullForm": "Union Public Service Commission Civil Services Examination",
+          "purpose": "Recruitment for IAS, IPS, IFS and other central services",
+          "conductingBody": "Union Public Service Commission (UPSC)",
+          "officialWebsite": "https://upsc.gov.in",
+          "eligibility": "Graduation in any discipline",
+          "ageLimit": "21 to 32 years (relaxation for reserved categories)",
+          "attempts": "6 attempts for General (9 for OBC, No limit for SC/ST)",
+          "examPattern": "Prelims + Mains + Interview",
+          "stages": [
+            "Preliminary Exam (Objective)",
+            "Main Exam (Descriptive)",
+            "Personality Test (Interview)"
+          ],
+          "prelimsSubjects": ["General Studies", "CSAT"],
+          "mainsSubjects": ["Essay", "General Studies", "Optional Subject", "Indian Language", "English"],
+          "totalMarks": 2025,
+          "duration": "Multiple days",
+          "applicationFee": "₹100",
+          "importantDates": {
+            "registration": "February - March",
+            "prelims": "May - June",
+            "mains": "September - October",
+            "interview": "January - March"
+          },
+          "optionalSubjects": ["History", "Geography", "Public Administration", "Sociology", "Political Science", "26 subjects available"],
+          "services": ["IAS", "IPS", "IFS", "IRS", "IPS", "Other Group A & B Services"],
+          "careerPaths": ["Administrative Officer", "Police Officer", "Diplomat", "Revenue Officer", "Policy Maker"]
+        }
+      ]
+    },
+    {
+      "category": "Banking & SSC",
+      "icon": "fas fa-university",
+      "exams": [
+        {
+          "name": "SSC CGL",
+          "fullForm": "Staff Selection Commission Combined Graduate Level",
+          "purpose": "Recruitment for various Group B and Group C posts in government",
+          "conductingBody": "Staff Selection Commission (SSC)",
+          "officialWebsite": "https://ssc.nic.in",
+          "eligibility": "Graduation in any discipline",
+          "ageLimit": "18 to 32 years",
+          "attempts": "Varies by category",
+          "examPattern": "Tier I (Computer Based) + Tier II (Computer Based) + Tier III (Descriptive) + Tier IV (Skill Test)",
+          "subjects": ["General Intelligence", "General Awareness", "Quantitative Aptitude", "English Language"],
+          "totalMarks": 800,
+          "duration": "1 hour each tier",
+          "questionType": "MCQ + Descriptive",
+          "negativeMarking": "Yes (0.50 marks deduction)",
+          "applicationFee": "₹100",
+          "importantDates": {
+            "registration": "April - May",
+            "tierI": "August - September",
+            "tierII": "November - December",
+            "result": "January"
+          },
+          "posts": ["Income Tax Inspector", "Auditor", "Accountant", "Statistical Investigator", "Tax Assistant"],
+          "careerPaths": ["Government Officer", "Tax Administrator", "Accountant", "Statistical Officer"]
+        },
+        {
+          "name": "IBPS PO",
+          "fullForm": "Institute of Banking Personnel Selection Probationary Officer",
+          "purpose": "Recruitment for Probationary Officers in Public Sector Banks",
+          "conductingBody": "Institute of Banking Personnel Selection (IBPS)",
+          "officialWebsite": "https://ibps.in",
+          "eligibility": "Graduation with 60% marks",
+          "ageLimit": "20 to 30 years",
+          "attempts": "No limit till age limit",
+          "examPattern": "Prelims + Mains + Interview",
+          "subjects": ["English", "Quantitative Aptitude", "Reasoning Ability", "General Awareness", "Computer Knowledge"],
+          "totalMarks": 225,
+          "duration": "1 hour prelims, 3 hours 30 minutes mains",
+          "questionType": "MCQ",
+          "negativeMarking": "Yes (0.25 marks deduction)",
+          "applicationFee": "₹850 (General), ₹175 (SC/ST)",
+          "importantDates": {
+            "registration": "August - September",
+            "prelims": "October",
+            "mains": "November",
+            "interview": "January"
+          },
+          "participatingBanks": ["SBI", "PNB", "Bank of Baroda", "Canara Bank", "All Public Sector Banks"],
+          "careerPaths": ["Bank Probationary Officer", "Branch Manager", "Relationship Manager", "Banking Executive"]
+        }
+      ]
+    }
+  ],
+  "examLevels": {
+    "after10th": ["NDA", "ITI Entrance", "Polytechnic Entrance", "Army Soldier Recruitment"],
+    "after12th": ["JEE Main", "NEET UG", "CLAT", "NDA", "State Engineering Entrances", "State Medical Entrances"],
+    "afterGraduation": ["CAT", "GATE", "UPSC Civil Services", "SSC CGL", "Bank PO", "State PSCs", "NET/JRF"],
+    "afterPostGraduation": ["UGC NET", "CSIR NET", "PhD Entrance", "Specialized Government Exams"]
+  },
+  "preparationResources": {
+    "books": {
+      "engineering": "HC Verma, RD Sharma, OP Tandon",
+      "medical": "NCERT Biology, Trueman's Biology, GRB",
+      "generalCompetition": "RS Aggarwal, Arihant, Kiran Publications"
+    },
+    "websites": ["Byju's", "Unacademy", "Khan Academy", "Gradeup", "Testbook"],
+    "youtubeChannels": ["Physics Wallah", "Unacademy", "Khan Academy", "Examपुर"],
+    "mobileApps": ["Gradeup", "Testbook", "Byju's", "Unacademy"]
+  }
+}

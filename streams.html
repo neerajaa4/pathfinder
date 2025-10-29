@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streams Guide - PathFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <h1><i class="fas fa-stream"></i> Streams Guide</h1>
+            <p>Complete Information About Science, Commerce, Arts & Vocational Streams</p>
+        </div>
+    </header>
+
+    <!-- Back to Home -->
+    <div class="container">
+        <div class="back-button">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Streams Overview -->
+        <section class="streams-overview glass-card">
+            <h2>🎯 Choose Your Path After 10th</h2>
+            <p class="overview-text">Selecting the right stream after 10th grade is crucial for your career. Here's a complete guide to help you make an informed decision.</p>
+            
+            <div class="streams-quick-nav">
+                <div class="nav-card" onclick="scrollToStream('science')">
+                    <i class="fas fa-atom"></i>
+                    <span>Science</span>
+                </div>
+                <div class="nav-card" onclick="scrollToStream('commerce')">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Commerce</span>
+                </div>
+                <div class="nav-card" onclick="scrollToStream('arts')">
+                    <i class="fas fa-palette"></i>
+                    <span>Arts</span>
+                </div>
+                <div class="nav-card" onclick="scrollToStream('vocational')">
+                    <i class="fas fa-tools"></i>
+                    <span>Vocational</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Stream -->
+        <section id="science" class="stream-detail glass-card">
+            <div class="stream-header">
+                <i class="fas fa-atom"></i>
+                <div>
+                    <h2>Science Stream</h2>
+                    <p>For students interested in Technology, Medicine, Research and Innovation</p>
+                </div>
+            </div>
+
+            <div class="stream-content">
+                <!-- Subjects -->
+                <div class="info-section">
+                    <h3>📚 Core Subjects</h3>
+                    <div class="subjects-list">
+                        <div class="subject-item">
+                            <strong>Physics</strong>
+                            <span>Study of matter, energy, and their interactions</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Chemistry</strong>
+                            <span>Study of substances and their transformations</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Mathematics</strong>
+                            <span>Advanced mathematical concepts and applications</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Biology</strong>
+                            <span>Study of living organisms and life processes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combinations -->
+                <div class="info-section">
+                    <h3>🔬 Popular Combinations</h3>
+                    <div class="combinations-grid">
+                        <div class="combination-card">
+                            <h4>PCM (Physics, Chemistry, Mathematics)</h4>
+                            <ul>
+                                <li>Engineering</li>
+                                <li>Architecture</li>
+                                <li>Computer Science</li>
+                                <li>Defense Services</li>
+                            </ul>
+                        </div>
+                        <div class="combination-card">
+                            <h4>PCB (Physics, Chemistry, Biology)</h4>
+                            <ul>
+                                <li>MBBS - Medicine</li>
+                                <li>BDS - Dentistry</li>
+                                <li>Pharmacy</li>
+                                <li>Biotechnology</li>
+                            </ul>
+                        </div>
+                        <div class="combination-card">
+                            <h4>PCMB (All Four Subjects)</h4>
+                            <ul>
+                                <li>Widest career options</li>
+                                <li>Both Engineering & Medical</li>
+                                <li>Research Fields</li>
+                                <li>Flexible career choices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Paths -->
+                <div class="info-section">
+                    <h3>🚀 Career Paths After Science</h3>
+                    <div class="career-path">
+                        <div class="path-step">
+                            <h4>After 12th Science →</h4>
+                            <div class="degree-options">
+                                <div class="degree-card">
+                                    <h5>Engineering</h5>
+                                    <ul>
+                                        <li>BTech/BE (4 years)</li>
+                                        <li>Specializations: CS, Mechanical, Civil, etc.</li>
+                                        <li>Exams: JEE Main, JEE Advanced</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>Medical</h5>
+                                    <ul>
+                                        <li>MBBS (5.5 years)</li>
+                                        <li>BDS, BAMS, BHMS</li>
+                                        <li>Exams: NEET UG</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>Other Degrees</h5>
+                                    <ul>
+                                        <li>BSc (3 years)</li>
+                                        <li>BPharm (4 years)</li>
+                                        <li>BArch (5 years)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="path-step">
+                            <h4>After Degree →</h4>
+                            <div class="pg-options">
+                                <div class="pg-card">
+                                    <h5>Post Graduation</h5>
+                                    <ul>
+                                        <li>MTech/MS (Engineering)</li>
+                                        <li>MD/MS (Medical)</li>
+                                        <li>MSc (Science)</li>
+                                        <li>MBA (Management)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="path-step">
+                            <h4>Final Careers →</h4>
+                            <div class="career-options">
+                                <div class="career-card">
+                                    <h5>Engineering Fields</h5>
+                                    <p>Software Engineer, Mechanical Engineer, Civil Engineer, Data Scientist</p>
+                                </div>
+                                <div class="career-card">
+                                    <h5>Medical Fields</h5>
+                                    <p>Doctor, Surgeon, Dentist, Pharmacist, Medical Researcher</p>
+                                </div>
+                                <div class="career-card">
+                                    <h5>Research & Development</h5>
+                                    <p>Scientist, Research Analyst, Lab Technician, Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Exams -->
+                <div class="info-section">
+                    <h3>🎯 Government Exams for Science Students</h3>
+                    <div class="exams-grid">
+                        <div class="exam-card-detailed">
+                            <h4>After 12th</h4>
+                            <ul>
+                                <li><strong>JEE Main/Advanced</strong> - Engineering</li>
+                                <li><strong>NEET UG</strong> - Medical</li>
+                                <li><strong>NDA</strong> - Defense</li>
+                                <li><strong>AIIMS</strong> - Medical</li>
+                            </ul>
+                        </div>
+                        <div class="exam-card-detailed">
+                            <h4>After Degree</h4>
+                            <ul>
+                                <li><strong>GATE</strong> - PG Engineering</li>
+                                <li><strong>UPSC ESE</strong> - Engineering Services</li>
+                                <li><strong>PGIMER</strong> - Medical PG</li>
+                                <li><strong>ISRO</strong> - Space Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commerce Stream -->
+        <section id="commerce" class="stream-detail glass-card">
+            <div class="stream-header">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <h2>Commerce Stream</h2>
+                    <p>For students interested in Business, Finance, Accounting and Entrepreneurship</p>
+                </div>
+            </div>
+
+            <div class="stream-content">
+                <!-- Subjects -->
+                <div class="info-section">
+                    <h3>📚 Core Subjects</h3>
+                    <div class="subjects-list">
+                        <div class="subject-item">
+                            <strong>Accountancy</strong>
+                            <span>Principles of accounting and financial management</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Business Studies</strong>
+                            <span>Study of business operations and management</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Economics</strong>
+                            <span>Micro and macro economic principles</span>
+                        </div>
+                        <div class="subject-item">
+                            <strong>Mathematics/Statistics</strong>
+                            <span>Optional based on course selection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Paths -->
+                <div class="info-section">
+                    <h3>💼 Career Paths After Commerce</h3>
+                    <div class="career-path">
+                        <div class="path-step">
+                            <h4>Professional Courses →</h4>
+                            <div class="degree-options">
+                                <div class="degree-card">
+                                    <h5>CA (Chartered Accountancy)</h5>
+                                    <ul>
+                                        <li>Duration: 4.5-5 years</li>
+                                        <li>Exams: CA Foundation, Intermediate, Final</li>
+                                        <li>Scope: Auditing, Taxation, Finance</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>CS (Company Secretary)</h5>
+                                    <ul>
+                                        <li>Duration: 3-4 years</li>
+                                        <li>Corporate legal compliance</li>
+                                        <li>High demand in corporates</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>CMA (Cost Management Accountant)</h5>
+                                    <ul>
+                                        <li>Duration: 3-4 years</li>
+                                        <li>Cost accounting specialization</li>
+                                        <li>Manufacturing sector focus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="path-step">
+                            <h4>Degree Courses →</h4>
+                            <div class="degree-options">
+                                <div class="degree-card">
+                                    <h5>BCom (Bachelor of Commerce)</h5>
+                                    <ul>
+                                        <li>Duration: 3 years</li>
+                                        <li>Specializations: Accounting, Finance</li>
+                                        <li>Further studies: MBA, MCom</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>BBA (Bachelor of Business Administration)</h5>
+                                    <ul>
+                                        <li>Duration: 3 years</li>
+                                        <li>Management focused</li>
+                                        <li>Path to MBA</li>
+                                    </ul>
+                                </div>
+                                <div class="degree-card">
+                                    <h5>Economics Honours</h5>
+                                    <ul>
+                                        <li>Duration: 3 years</li>
+                                        <li>Research and analysis</li>
+                                        <li>Banking and policy roles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Opportunities -->
+                <div class="info-section">
+                    <h3>🏢 Job Opportunities</h3>
+                    <div class="jobs-grid">
+                        <div class="job-card">
+                            <h5>Accounting & Finance</h5>
+                            <p>Accountant, Financial Analyst, Auditor, Tax Consultant</p>
+                            <span>Salary: ₹3-12 LPA</span>
+                        </div>
+                        <div class="job-card">
+                            <h5>Banking & Insurance</h5>
+                            <p>Bank PO, Relationship Manager, Insurance Advisor</p>
+                            <span>Salary: ₹4-15 LPA</span>
+                        </div>
+                        <div class="job-card">
+                            <h5>Corporate Sector</h5>
+                            <p>HR Manager, Marketing Executive, Business Analyst</p>
+                            <span>Salary: ₹4-20 LPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Arts Stream -->
+        <section id="arts" class="stream-detail glass-card">
+            <div class="stream-header">
+                <i class="fas fa-palette"></i>
+                <div>
+                    <h2>Arts/Humanities Stream</h2>
+                    <p>For students interested in Social Sciences, Languages, Creative Arts and Civil Services</p>
+                </div>
+            </div>
+
+            <div class="stream-content">
+                <!-- Subjects -->
+                <div class="info-section">
+                    <h3>📚 Popular Subjects</h3>
+                    <div class="subjects-grid-arts">
+                        <div class="subject-category">
+                            <h4>Social Sciences</h4>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Sociology</li>
+                                <li>Psychology</li>
+                                <li>Geography</li>
+                            </ul>
+                        </div>
+                        <div class="subject-category">
+                            <h4>Languages & Literature</h4>
+                            <ul>
+                                <li>English</li>
+                                <li>Hindi</li>
+                                <li>Regional Languages</li>
+                                <li>Journalism</li>
+                            </ul>
+                        </div>
+                        <div class="subject-category">
+                            <h4>Creative Arts</h4>
+                            <ul>
+                                <li>Fine Arts</li>
+                                <li>Music</li>
+                                <li>Dance</li>
+                                <li>Theatre</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Paths -->
+                <div class="info-section">
+                    <h3>🎓 Career Paths After Arts</h3>
+                    <div class="career-path-arts">
+                        <div class="career-category">
+                            <h4>Civil Services & Government Jobs</h4>
+                            <ul>
+                                <li><strong>UPSC Civil Services</strong> - IAS, IPS, IFS</li>
+                                <li><strong>SSC CGL</strong> - Group A & B officers</li>
+                                <li><strong>State PSCs</strong> - State administration</li>
+                                <li><strong>Bank PO Exams</strong> - Banking sector</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="career-category">
+                            <h4>Professional Courses</h4>
+                            <ul>
+                                <li><strong>BA LLB</strong> - 5 year Law degree</li>
+                                <li><strong>BFA</strong> - Bachelor of Fine Arts</li>
+                                <li><strong>BJMC</strong> - Journalism & Mass Comm</li>
+                                <li><strong>BEd</strong> - Bachelor of Education</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-category">
+                            <h4>Higher Education</h4>
+                            <ul>
+                                <li><strong>MA</strong> - Master of Arts</li>
+                                <li><strong>MPhil/PhD</strong> - Research</li>
+                                <li><strong>PG Diploma</strong> - Specialized courses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocational Stream -->
+        <section id="vocational" class="stream-detail glass-card">
+            <div class="stream-header">
+                <i class="fas fa-tools"></i>
+                <div>
+                    <h2>Vocational Courses</h2>
+                    <p>Skill-based education for immediate employment and entrepreneurship</p>
+                </div>
+            </div>
+
+            <div class="stream-content">
+                <!-- ITI Courses -->
+                <div class="info-section">
+                    <h3>🔧 ITI (Industrial Training Institute) Courses</h3>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <h4>Engineering Trades</h4>
+                            <ul>
+                                <li>Electrician (2 years)</li>
+                                <li>Fitter (2 years)</li>
+                                <li>Welder (1 year)</li>
+                                <li>Mechanic (2 years)</li>
+                            </ul>
+                        </div>
+                        <div class="course-card">
+                            <h4>Non-Engineering Trades</h4>
+                            <ul>
+                                <li>Computer Operator (1 year)</li>
+                                <li>Secretarial Practice (1 year)</li>
+                                <li>Hair & Skin Care (1 year)</li>
+                                <li>Photography (1 year)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diploma Courses -->
+                <div class="info-section">
+                    <h3>🎓 Polytechnic Diploma Courses</h3>
+                    <div class="diploma-grid">
+                        <div class="diploma-card">
+                            <h4>Engineering Diploma</h4>
+                            <ul>
+                                <li>Civil Engineering (3 years)</li>
+                                <li>Mechanical Engineering (3 years)</li>
+                                <li>Electrical Engineering (3 years)</li>
+                                <li>Computer Science (3 years)</li>
+                            </ul>
+                        </div>
+                        <div class="diploma-card">
+                            <h4>Other Diplomas</h4>
+                            <ul>
+                                <li>Fashion Technology (2 years)</li>
+                                <li>Interior Design (2 years)</li>
+                                <li>Hotel Management (2 years)</li>
+                                <li>Animation (2 years)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container">
+            <p>&copy; 2024 PathFinder - Complete Career Guidance Platform</p>
+            <p>Made with ❤️ for Indian Students</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToStream(streamId) {
+            document.getElementById(streamId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Add active class to navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navCards = document.querySelectorAll('.nav-card');
+            navCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    navCards.forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional Styles for Streams Page */
+        .back-button {
+            margin: 1rem 0;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: white;
+            transform: translateX(-5px);
+        }
+
+        .streams-overview {
+            text-align: center;
+        }
+
+        .overview-text {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .streams-quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .nav-card:hover,
+        .nav-card.active {
+            background: white;
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .nav-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-card span {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .stream-detail {
+            margin-top: 3rem;
+        }
+
+        .stream-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .stream-header i {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stream-header h2 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .stream-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        .info-section {
+            margin-bottom: 3rem;
+        }
+
+        .info-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .subjects-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .subject-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--success);
+        }
+
+        .subject-item strong {
+            color: var(--dark);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .subject-item span {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .combinations-grid,
+        .degree-options,
+        .pg-options,
+        .career-options,
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .combination-card,
+        .degree-card,
+        .pg-card,
+        .career-card,
+        .job-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .combination-card:hover,
+        .degree-card:hover,
+        .pg-card:hover,
+        .career-card:hover,
+        .job-card:hover {
+            transform: translateY(-3px);
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .combination-card h4,
+        .degree-card h5,
+        .pg-card h5,
+        .career-card h5,
+        .job-card h5 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .combination-card ul,
+        .degree-card ul,
+        .pg-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .combination-card li,
+        .degree-card li,
+        .pg-card li {
+            padding: 0.3rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .combination-card li:before,
+        .degree-card li:before,
+        .pg-card li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .career-path {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .path-step h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .job-card span {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.3rem 0.8rem;
+            background: var(--success);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .subjects-grid-arts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .subject-category {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .subject-category h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .subject-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .subject-category li {
+            padding: 0.5rem 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+        }
+
+        .subject-category li:last-child {
+            border-bottom: none;
+        }
+
+        .career-path-arts {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .career-category {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .career-category h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .career-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .career-category li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+
+        .courses-grid,
+        .diploma-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .course-card,
+        .diploma-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .course-card h4,
+        .diploma-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .course-card ul,
+        .diploma-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-card li,
+        .diploma-card li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .streams-quick-nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stream-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .combinations-grid,
+            .degree-options,
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

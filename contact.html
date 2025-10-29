@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Counseling - PathFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <h1><i class="fas fa-headset"></i> Contact & Career Counseling</h1>
+            <p>Get Personalized Career Guidance from Our Expert Counselors</p>
+        </div>
+    </header>
+
+    <!-- Back to Home -->
+    <div class="container">
+        <div class="back-button">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Quick Help Section -->
+        <section class="quick-help glass-card">
+            <h2>🚀 Quick Career Help</h2>
+            <div class="help-options">
+                <div class="help-option" onclick="showCounselingForm('stream-selection')">
+                    <i class="fas fa-stream"></i>
+                    <h3>Stream Selection</h3>
+                    <p>Confused about Science, Commerce or Arts?</p>
+                    <span>Get Expert Advice</span>
+                </div>
+                <div class="help-option" onclick="showCounselingForm('career-guidance')">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Career Guidance</h3>
+                    <p>Not sure which career path to choose?</p>
+                    <span>Career Assessment</span>
+                </div>
+                <div class="help-option" onclick="showCounselingForm('exam-preparation')">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Exam Preparation</h3>
+                    <p>Need help with JEE, NEET or other exams?</p>
+                    <span>Study Plan</span>
+                </div>
+                <div class="help-option" onclick="showCounselingForm('college-selection')">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>College Selection</h3>
+                    <p>Which college is best for your career?</p>
+                    <span>College Ranking</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Counseling Team -->
+        <section class="counseling-team glass-card">
+            <h2>👥 Meet Our Career Counselors</h2>
+            <div class="counselors-grid">
+                <div class="counselor-card">
+                    <div class="counselor-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Dr. Rajesh Kumar</h3>
+                    <p class="counselor-qualification">PhD in Career Psychology, 15+ Years Experience</p>
+                    <p class="counselor-specialization">Specialization: Engineering & Medical Careers</p>
+                    <div class="counselor-stats">
+                        <div class="stat">
+                            <strong>5000+</strong>
+                            <span>Students Guided</span>
+                        </div>
+                        <div class="stat">
+                            <strong>98%</strong>
+                            <span>Success Rate</span>
+                        </div>
+                    </div>
+                    <button class="btn-book" onclick="bookSession('Dr. Rajesh Kumar')">
+                        <i class="fas fa-calendar-check"></i> Book Session
+                    </button>
+                </div>
+
+                <div class="counselor-card">
+                    <div class="counselor-img">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Prof. Sunita Sharma</h3>
+                    <p class="counselor-qualification">MSc Psychology, Career Counselor - 12 Years</p>
+                    <p class="counselor-specialization">Specialization: Commerce & Management</p>
+                    <div class="counselor-stats">
+                        <div class="stat">
+                            <strong>3500+</strong>
+                            <span>Students Guided</span>
+                        </div>
+                        <div class="stat">
+                            <strong>96%</strong>
+                            <span>Success Rate</span>
+                        </div>
+                    </div>
+                    <button class="btn-book" onclick="bookSession('Prof. Sunita Sharma')">
+                        <i class="fas fa-calendar-check"></i> Book Session
+                    </button>
+                </div>
+
+                <div class="counselor-card">
+                    <div class="counselor-img">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Mr. Amit Verma</h3>
+                    <p class="counselor-qualification">MBA, Career Strategist - 10 Years</p>
+                    <p class="counselor-specialization">Specialization: Arts & Civil Services</p>
+                    <div class="counselor-stats">
+                        <div class="stat">
+                            <strong>2800+</strong>
+                            <span>Students Guided</span>
+                        </div>
+                        <div class="stat">
+                            <strong>95%</strong>
+                            <span>Success Rate</span>
+                        </div>
+                    </div>
+                    <button class="btn-book" onclick="bookSession('Mr. Amit Verma')">
+                        <i class="fas fa-calendar-check"></i> Book Session
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Counseling Form -->
+        <section id="counselingForm" class="counseling-form glass-card" style="display: none;">
+            <div class="form-header">
+                <h2>📝 Career Counseling Session</h2>
+                <p>Fill this form to get personalized career guidance from our experts</p>
+            </div>
+
+            <form id="careerCounselingForm" onsubmit="submitCounselingForm(event)">
+                <div class="form-group">
+                    <label for="fullName"><i class="fas fa-user"></i> Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="currentEducation"><i class="fas fa-graduation-cap"></i> Current Education *</label>
+                        <select id="currentEducation" name="currentEducation" required>
+                            <option value="">Select your current level</option>
+                            <option value="10th">10th Class</option>
+                            <option value="12th">12th Class</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="post-graduation">Post Graduation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="stream"><i class="fas fa-stream"></i> Current Stream</label>
+                        <select id="stream" name="stream">
+                            <option value="">Select your stream</option>
+                            <option value="science">Science</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="arts">Arts/Humanities</option>
+                            <option value="vocational">Vocational</option>
+                            <option value="not-decided">Not Decided Yet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="counselingType"><i class="fas fa-hand-holding-heart"></i> Type of Counseling Needed *</label>
+                    <select id="counselingType" name="counselingType" required onchange="updateCounselingDescription()">
+                        <option value="">Select counseling type</option>
+                        <option value="stream-selection">Stream Selection After 10th</option>
+                        <option value="career-guidance">Career Guidance & Planning</option>
+                        <option value="exam-preparation">Exam Preparation Strategy</option>
+                        <option value="college-selection">College & Course Selection</option>
+                        <option value="career-change">Career Change Guidance</option>
+                        <option value="skill-development">Skill Development Plan</option>
+                    </select>
+                </div>
+
+                <div id="counselingDescription" class="counseling-description" style="display: none;">
+                    <div class="description-content">
+                        <h4><i class="fas fa-info-circle"></i> What to Expect:</h4>
+                        <p id="descriptionText"></p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredCounselor"><i class="fas fa-user-tie"></i> Preferred Counselor</label>
+                    <select id="preferredCounselor" name="preferredCounselor">
+                        <option value="">Any Available Counselor</option>
+                        <option value="Dr. Rajesh Kumar">Dr. Rajesh Kumar (Engineering & Medical)</option>
+                        <option value="Prof. Sunita Sharma">Prof. Sunita Sharma (Commerce & Management)</option>
+                        <option value="Mr. Amit Verma">Mr. Amit Verma (Arts & Civil Services)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="careerInterests"><i class="fas fa-star"></i> Your Career Interests</label>
+                    <div class="interests-grid">
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="engineering"> Engineering & Technology
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="medical"> Medical & Healthcare
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="business"> Business & Management
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="creative"> Creative Arts & Design
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="teaching"> Teaching & Education
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="government"> Government Services
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="research"> Research & Development
+                        </label>
+                        <label class="interest-option">
+                            <input type="checkbox" name="careerInterests" value="entrepreneurship"> Entrepreneurship
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-dots"></i> Additional Information *</label>
+                    <textarea id="message" name="message" required rows="5" placeholder="Tell us about your career aspirations, strengths, weaknesses, and any specific questions you have..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredTime"><i class="fas fa-clock"></i> Preferred Session Time</label>
+                    <select id="preferredTime" name="preferredTime">
+                        <option value="">Any time</option>
+                        <option value="weekday-morning">Weekday Morning (9 AM - 12 PM)</option>
+                        <option value="weekday-afternoon">Weekday Afternoon (2 PM - 5 PM)</option>
+                        <option value="weekday-evening">Weekday Evening (6 PM - 9 PM)</option>
+                        <option value="weekend">Weekend (Saturday/Sunday)</option>
+                    </select>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Counseling Request
+                    </button>
+                    <p class="form-note">
+                        <i class="fas fa-info-circle"></i> Our counselor will contact you within 24 hours to schedule your session.
+                    </p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info glass-card">
+            <h2>📞 Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Support</h3>
+                    <p>+91 98765 43210</p>
+                    <p>+91 91234 56789</p>
+                    <span>Mon-Sat: 9 AM - 7 PM</span>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>career@pathfinder.com</p>
+                    <p>support@pathfinder.com</p>
+                    <span>Response within 12 hours</span>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Office Address</h3>
+                    <p>PathFinder Career Center</p>
+                    <p>123 Education Street,</p>
+                    <p>Hyderabad, Telangana - 500001</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Saturday</p>
+                    <p>9:00 AM - 7:00 PM</p>
+                    <p>Sunday: 10 AM - 2 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section glass-card">
+            <h2>❓ Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much does career counseling cost?</h3>
+                    <p>Basic career guidance session is <strong>FREE</strong>. Detailed personalized counseling sessions start from ₹999 onwards depending on the complexity and duration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long is a counseling session?</h3>
+                    <p>Initial assessment sessions are 30-45 minutes. Detailed counseling sessions can be 60-90 minutes based on your requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I get counseling online?</h3>
+                    <p>Yes! We provide both online (video call) and offline counseling sessions. You can choose your preferred mode.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What information should I bring to the session?</h3>
+                    <p>Bring your academic records, list of interests, and any career-related questions. For online sessions, have these details ready to discuss.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide follow-up sessions?</h3>
+                    <p>Yes, we provide follow-up sessions to track your progress and make adjustments to your career plan as needed.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can parents attend the counseling session?</h3>
+                    <p>Absolutely! We encourage parents to be part of the career decision-making process, especially for school students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories glass-card">
+            <h2>🌟 Student Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="student-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Rahul Sharma</h3>
+                    <p class="student-achievement">Selected for IIT Bombay - Computer Science</p>
+                    <p class="student-testimonial">"PathFinder helped me choose the right stream after 10th and provided excellent JEE preparation guidance. Today I'm living my dream!"</p>
+                </div>
+                <div class="story-card">
+                    <div class="student-avatar">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Priya Patel</h3>
+                    <p class="student-achievement">MBBS at AIIMS Delhi</p>
+                    <p class="student-testimonial">"I was confused between Engineering and Medical. The counselors helped me understand my true passion for medicine. Thank you PathFinder!"</p>
+                </div>
+                <div class="story-card">
+                    <div class="student-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Arjun Reddy</h3>
+                    <p class="student-achievement">IAS Officer - 2022 Batch</p>
+                    <p class="student-testimonial">"From Arts stream to IAS officer - PathFinder's guidance made this incredible journey possible. Their civil services strategy was perfect!"</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container">
+            <p>&copy; 2024 PathFinder - Complete Career Guidance Platform</p>
+            <p>Made with ❤️ for Indian Students</p>
+        </div>
+    </footer>
+
+    <script>
+        // Show counseling form based on help option
+        function showCounselingForm(type) {
+            const form = document.getElementById('counselingForm');
+            const counselingType = document.getElementById('counselingType');
+            
+            form.style.display = 'block';
+            counselingType.value = type;
+            updateCounselingDescription();
+            
+            // Scroll to form
+            form.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Update counseling description based on selection
+        function updateCounselingDescription() {
+            const type = document.getElementById('counselingType').value;
+            const descriptionDiv = document.getElementById('counselingDescription');
+            const descriptionText = document.getElementById('descriptionText');
+            
+            const descriptions = {
+                'stream-selection': 'Our expert will analyze your interests, strengths, and academic performance to recommend the perfect stream (Science, Commerce, or Arts) that aligns with your career goals.',
+                'career-guidance': 'Get a comprehensive career assessment including personality analysis, skill mapping, and detailed career path planning with actionable steps.',
+                'exam-preparation': 'Receive a customized study plan, time management strategies, and expert tips for cracking competitive exams like JEE, NEET, UPSC, etc.',
+                'college-selection': 'Get personalized college recommendations based on your scores, budget, location preference, and career aspirations with detailed comparison.',
+                'career-change': 'Guidance for professionals looking to switch careers, including skill assessment, retraining options, and transition strategies.',
+                'skill-development': 'Identify key skills needed for your dream career and get a structured development plan with resources and timeline.'
+            };
+            
+            if (type && descriptions[type]) {
+                descriptionText.textContent = descriptions[type];
+                descriptionDiv.style.display = 'block';
+            } else {
+                descriptionDiv.style.display = 'none';
+            }
+        }
+
+        // Book counseling session
+        function bookSession(counselorName) {
+            const form = document.getElementById('counselingForm');
+            const preferredCounselor = document.getElementById('preferredCounselor');
+            
+            form.style.display = 'block';
+            preferredCounselor.value = counselorName;
+            
+            // Scroll to form
+            form.scrollIntoView({ behavior: 'smooth' });
+            
+            // Show confirmation message
+            showNotification(`Session requested with ${counselorName}. Please fill the form to confirm.`, 'info');
+        }
+
+        // Submit counseling form
+        function submitCounselingForm(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            showNotification('🎉 Counseling request submitted successfully! Our team will contact you within 24 hours.', 'success');
+            
+            // Reset form
+            event.target.reset();
+            document.getElementById('counselingDescription').style.display = 'none';
+            
+            // You can add AJAX call here to actually submit the form
+            console.log('Counseling Form Data:', data);
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            // Remove existing notification
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <span>${message}</span>
+                <button onclick="this.parentElement.remove()">&times;</button>
+            `;
+            
+            // Add styles
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'error' ? '#ff3b30' : type === 'warning' ? '#ff9500' : type === 'success' ? '#4cd964' : '#5ac8fa'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                animation: slideIn 0.3s ease-out;
+            `;
+            
+            notification.querySelector('button').style.cssText = `
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.2rem;
+                cursor: pointer;
+                padding: 0;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.remove();
+                }
+            }, 5000);
+        }
+
+        // Add slideIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+    <style>
+        /* Additional Styles for Contact Page */
+        .quick-help {
+            text-align: center;
+        }
+
+        .help-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .help-option {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .help-option:hover {
+            background: white;
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .help-option i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .help-option h3 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .help-option p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .help-option span {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .counseling-team {
+            margin-top: 3rem;
+        }
+
+        .counselors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .counselor-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .counselor-card:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .counselor-img {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .counselor-img i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .counselor-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .counselor-qualification {
+            color: var(--dark);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .counselor-specialization {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .counselor-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1.5rem;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .stat span {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .btn-book {
+            background: linear-gradient(45deg, var(--success), #34e89e);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-book:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(52, 232, 158, 0.4);
+        }
+
+        .counseling-form {
+            margin-top: 3rem;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-header h2 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .form-group label i {
+            color: var(--accent);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: white;
+            transform: scale(1.02);
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .interest-option {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .interest-option:hover {
+            background: white;
+            border-color: var(--accent);
+        }
+
+        .interest-option input {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        .counseling-description {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--info);
+        }
+
+        .description-content h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .description-content h4 i {
+            color: var(--info);
+        }
+
+        .description-content p {
+            color: #555;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .form-submit {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-submit {
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .form-note {
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateY(-3px);
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-method i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-method h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .contact-method p {
+            color: #555;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-method span {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .success-stories {
+            margin-top: 3rem;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .story-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .student-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .student-avatar i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .story-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .student-achievement {
+            color: var(--success);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .student-testimonial {
+            color: #555;
+            font-style: italic;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .help-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .counselors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
